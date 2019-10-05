@@ -3033,3 +3033,1588 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 6996)
 
 
+Started GET "/login" for ::1 at 2019-10-05 21:24:25 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 65ms (ActiveRecord: 9.2ms | Allocations: 56224)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:24:25 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 370)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 991ms (Views: 988.0ms | ActiveRecord: 0.3ms | Allocations: 1523705)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:26:46 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 8.7ms | Allocations: 8884)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:26:46 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 6678)
+
+
+Started GET "/show" for ::1 at 2019-10-05 21:27:09 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1322)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 6994)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-05 21:31:24 +0900
+  
+SyntaxError (/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/controllers/application_controller.rb:11: unknown regexp options - dt):
+  
+app/controllers/application_controller.rb:11: unknown regexp options - dt
+app/controllers/application_controller.rb:11: unknown regexp options - dt
+app/controllers/application_controller.rb:11: unknown regexp options - dt
+Started DELETE "/users/sign_out" for ::1 at 2019-10-05 21:32:30 +0900
+Started DELETE "/users/sign_out" for ::1 at 2019-10-05 21:32:35 +0900
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#destroy as HTML
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EO/zV2foglCShyexAbUozJ+RIoQk8TS+kbvMcT3kkMTRLe6LyPKVLRrw6He1ePAJqR+EmXOChqBzSyrGGgzd3A=="}
+  Parameters: {"authenticity_token"=>"EO/zV2foglCShyexAbUozJ+RIoQk8TS+kbvMcT3kkMTRLe6LyPKVLRrw6He1ePAJqR+EmXOChqBzSyrGGgzd3A=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 9.7ms | Allocations: 12814)
+
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 8.5ms | Allocations: 13649)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:32:35 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5810)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-05 21:32:39 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 549)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 4771)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 12631)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:32:43 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 212)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1981)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 9198)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:32:45 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"2ioglWd5BlJlaEUgrMmjohdgV1nNl08oi9tK6SgHlnedQp+DUqeIscoXBOvh+y5REzZuLa/48Lnk4AUo+r/YzA==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.4ms | Allocations: 66552)
+
+
+  
+NameError (undefined local variable or method `edit_user_password' for #<Devise::SessionsController:0x00007f873b4991d8>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:37:01 +0900
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:37:25 +0900
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:37:25 +0900
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:37:25 +0900
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1108)
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1059)
+Completed 200 OK in 38ms (Views: 19.7ms | ActiveRecord: 9.1ms | Allocations: 19325)
+
+
+Completed 200 OK in 43ms (Views: 16.8ms | ActiveRecord: 23.2ms | Allocations: 21619)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:38:45 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"RNjRFW/7f2DAdRo7yqYBU7bGw5wPlIgSetlkz6l3zlMDsG4DWiXxg28KW/CHlIygspD66G37N4MV4isOe8+A6A==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.4ms | Allocations: 65137)
+
+
+  
+NameError (undefined local variable or method `rails_mandrill_inbound_emails' for #<Devise::SessionsController:0x00007f873b019db0>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:45:17 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:45:17 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"RNjRFW/7f2DAdRo7yqYBU7bGw5wPlIgSetlkz6l3zlMDsG4DWiXxg28KW/CHlIygspD66G37N4MV4isOe8+A6A==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Processing by Devise::SessionsController#new as HTML
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:45:17 +0900
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1105)
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"2ioglWd5BlJlaEUgrMmjohdgV1nNl08oi9tK6SgHlnedQp+DUqeIscoXBOvh+y5REzZuLa/48Lnk4AUo+r/YzA==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 7.3ms | Allocations: 75246)
+
+
+  [1m[36mUser Load (232.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  
+NameError (undefined local variable or method `root_url' for #<Devise::SessionsController:0x00007f8739f31070>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Completed 500 Internal Server Error in 496ms (ActiveRecord: 232.7ms | Allocations: 192801)
+
+
+  
+NameError (undefined local variable or method `root_url' for #<Devise::SessionsController:0x00007f8739f42ed8>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Completed 200 OK in 807ms (Views: 800.7ms | ActiveRecord: 0.0ms | Allocations: 568382)
+
+
+Started GET "/show" for ::1 at 2019-10-05 21:45:26 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 976)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1744)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>ユーザー情報</h1>
+    2: <%=current_user.name %><br />
+    3: <%=current_user.email %><br />
+    4: <img src=<%= current_user.image %> class = "icon_image">
+  
+app/views/users/show.html.erb:2
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:45:33 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1042)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6861)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:45:41 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1033)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6848)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:45:57 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"yUzNc5di9CJ7hsYHHEStkXL+e6c7iKeOTMx3WDvQb+SOJHJlorx6wdT5h8xRdiBidqhC01nnGB8j9ziZ6WghXw==", "user"=>{"email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'abeshinnosuke1006@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.6ms | Allocations: 65024)
+
+
+  
+NameError (undefined local variable or method `root_url' for #<Devise::SessionsController:0x00007f873a5e1ca8>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Started GET "/users/password" for ::1 at 2019-10-05 21:47:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/password"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:47:43 +0900
+Processing by Devise::SessionsController#create as HTML
+Processing by Devise::SessionsController#create as HTML
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:47:43 +0900
+  Parameters: {"authenticity_token"=>"RNjRFW/7f2DAdRo7yqYBU7bGw5wPlIgSetlkz6l3zlMDsG4DWiXxg28KW/CHlIygspD66G37N4MV4isOe8+A6A==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Parameters: {"authenticity_token"=>"RNjRFW/7f2DAdRo7yqYBU7bGw5wPlIgSetlkz6l3zlMDsG4DWiXxg28KW/CHlIygspD66G37N4MV4isOe8+A6A==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"yUzNc5di9CJ7hsYHHEStkXL+e6c7iKeOTMx3WDvQb+SOJHJlorx6wdT5h8xRdiBidqhC01nnGB8j9ziZ6WghXw==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 22.5ms | Allocations: 88936)
+
+
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (192.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  
+NameError (undefined local variable or method `user_password' for #<Devise::SessionsController:0x00007f8733f58c70>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+  [1m[36mUser Load (106.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 211.7ms | Allocations: 216742)
+
+
+  
+NameError (undefined local variable or method `user_password' for #<Devise::SessionsController:0x00007f8733f6ad80>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Completed 500 Internal Server Error in 823ms (ActiveRecord: 305.1ms | Allocations: 405802)
+
+
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 295.1ms | Allocations: 126736)
+  
+NameError (undefined local variable or method `user_password' for #<Devise::SessionsController:0x00007f8733d03498>):
+  
+app/controllers/application_controller.rb:11:in `after_sign_in_path_for'
+Completed 200 OK in 1181ms (Views: 1161.9ms | ActiveRecord: 13.0ms | Allocations: 865039)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:48:03 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5758)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-05 21:48:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:48:38 +0900
+Processing by Devise::PasswordsController#edit as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :assert_reset_token_passed rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 737)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:48:38 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1042)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 6885)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-05 21:49:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:49:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :assert_reset_token_passed rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 623)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:49:16 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1033)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 6873)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:49:37 +0900
+Started GET "/users/password/new" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#new as HTML
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"JZlixVPyDofzWNiEVzGNWG9aBI+ScmeUyj9Fm5FwKh9i8d3TZiyAZFwnmU8aAwCraww9+/Ad2AWlBApaQ8hkpA==", "user"=>{"email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/passwords/new.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'abeshinnosuke1006@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 114.1ms | Allocations: 3645)
+Redirected to http://localhost:3000/users/password/edit
+Completed 302 Found in 138ms (ActiveRecord: 16.2ms | Allocations: 16810)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Completed 200 OK in 148ms (Views: 129.0ms | ActiveRecord: 9.6ms | Allocations: 22473)
+
+
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms | Allocations: 2150)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1881)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1882)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1881)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:16 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1879)
+
+
+Started POST "/users/password/edit" for ::1 at 2019-10-05 21:50:30 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/users/password/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:50:39 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1903)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1874)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:40 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1885)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1885)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:42 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1881)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1898)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1870)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1891)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1874)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1881)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:50 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1869)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1870)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1880)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1871)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1883)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1884)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:51 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1876)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1881)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1875)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1874)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1883)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1877)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1874)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1879)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1878)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1884)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1872)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1883)
+
+
+Started GET "/users/password/edit" for ::1 at 2019-10-05 21:50:56 +0900
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/password/edit
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:51:15 +0900
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:51:48 +0900
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 9.1ms | Allocations: 8924)
+
+
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 15.0ms | Allocations: 11524)
+
+
+Started GET "/show" for ::1 at 2019-10-05 21:51:48 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1137)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 6901)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-05 21:51:53 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wUEyup+Tt0on+9FB/oV44VIGUWdbjuS6nkV2RBHq6EBwZLLsbIIsp0ODA4QAEPriKsqtZuKvOrgmmQW4uh5TFA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms | Allocations: 2648)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:51:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5557)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:51:57 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1104)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7087)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 21:52:10 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ekjef030cBzeHfMOwPd37W2VxpXtANpxwFcaQqhQMx7Gv0NrYGm/FUXraTe6JiEB26xfot1hx/B2BKYYMyn+hw==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 108ms (ActiveRecord: 0.7ms | Allocations: 2879)
+
+
+Started GET "/show" for ::1 at 2019-10-05 21:52:10 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1127)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 6655)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:53:17 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1890)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-05 21:54:03 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CuGbl4XDzz0TFAc/m1RE84rhMIKnh5xWgcvl6Rt6MovTZBEzvBBAC+ahcTx8ybc3aimPnawPOAKsVjSqhv3aKw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2418)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:03 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5555)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:33 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6956)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:33 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5541)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:43 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6943)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:43 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5548)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:44 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 22361)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:54:52 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 87)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 6947)
+
+
+Started GET "/" for ::1 at 2019-10-05 21:55:09 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6950)
+
+
+Started GET "/show" for ::1 at 2019-10-05 21:58:10 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1103)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>ユーザー情報</h1>
+    2: <%=current_user.name %><br />
+    3: <%=current_user.email %><br />
+    4: <img src=<%= current_user.image %> class = "icon_image">
+  
+app/views/users/show.html.erb:2
+Started GET "/users/sign_in" for ::1 at 2019-10-05 21:58:28 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 551)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1918)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 9740)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-05 22:13:14 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"MnX7UNqNiR4QGO/OGvKAQFmHCy6oC24fJhZB3vue1aucudwwzQyFELIUVT89ZbtR0n8fpTi3KOEnrDksNtP1OA==", "user"=>{"email"=>"shibudai1006@icloud.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'shibudai1006@icloud.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 115ms (ActiveRecord: 0.4ms | Allocations: 5037)
+
+
+Started GET "/show" for ::1 at 2019-10-05 22:13:14 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1128)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 6672)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-05 22:13:20 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1894)
+
+
