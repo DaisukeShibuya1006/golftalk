@@ -4872,3 +4872,1202 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 5327)
 
 
+Started GET "/show" for ::1 at 2019-10-08 21:36:23 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 27.1ms | Allocations: 11745)
+Completed 200 OK in 1084ms (Views: 1064.3ms | ActiveRecord: 10.4ms | Allocations: 1535537)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-08 21:36:25 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"woCMJebB94Y3Y2Q8UDRC5oE6HVxIkVykAPLNpMglJTc77xCMYq96Y0MmcgFl18P2NHSzenT4s9cdbEECQwxt9w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 0.4ms | Allocations: 49986)
+
+
+Started GET "/" for ::1 at 2019-10-08 21:36:25 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 162)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5923)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:36:26 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 662)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4887)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 12784)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:36:28 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:36:28 +0900
+Started GET "/users/auth/facebook/callback?code=AQCZAwvPe3rk--IKAJpSOXlbNFTqeNnA0GjEsG5c7cgk1C2Q6u8gBRoF4Lyx0sEUoyohSdbDuHtCr_Hlop4IFM2s0eY0vkGNc72FlVAwLtRI6K49gvjGvjQkF7fda_wlSPEDOwU6Do6wpsnbgVXSj7FqQb4CURDZZP5sxp9G6LJHBObQVTc9R0EH-dq5htCrji0aIlncQ0DHo9egBTt85fMPd7B1mVu-LpLjQQz2gJuIWY2dNYMgWsTfKRMbK1VLytnqaleCrukp_u0pqumq2mmhcNG8u5xiZ_ty3J3drgeGqGSgV-8ieIl2Ih4kXDi3HUUhYpBh-slKD-t8xe_Obbkp&state=863cf33a7f9e6ca45047637a4d54e2b9f42a6ea7cbd210c1" for ::1 at 2019-10-08 21:36:31 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCZAwvPe3rk--IKAJpSOXlbNFTqeNnA0GjEsG5c7cgk1C2Q6u8gBRoF4Lyx0sEUoyohSdbDuHtCr_Hlop4IFM2s0eY0vkGNc72FlVAwLtRI6K49gvjGvjQkF7fda_wlSPEDOwU6Do6wpsnbgVXSj7FqQb4CURDZZP5sxp9G6LJHBObQVTc9R0EH-dq5htCrji0aIlncQ0DHo9egBTt85fMPd7B1mVu-LpLjQQz2gJuIWY2dNYMgWsTfKRMbK1VLytnqaleCrukp_u0pqumq2mmhcNG8u5xiZ_ty3J3drgeGqGSgV-8ieIl2Ih4kXDi3HUUhYpBh-slKD-t8xe_Obbkp", "state"=>"863cf33a7f9e6ca45047637a4d54e2b9f42a6ea7cbd210c1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 110ms (ActiveRecord: 1.0ms | Allocations: 6391)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:36:34 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1520)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7389)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:29 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:29 +0900
+Started GET "/users/auth/facebook/callback?code=AQAlQTgwXlLmJwrk8f4AWsS_RWsD3vluIN9Q0xxBDjg5eDHP24UgMK_480rrm4-fTa8BHKyEyQcvq7R5m8PCCFpEZOTEaYauJhZDqMia-rT6pk8EgU8sxS71KzvV0G-xvslf9q3riE7GWhYTPBzG7OQkYbwUQdFNQCQa77yBObq8JSx97k1H23NwoEDCJ-FIY6H2xPOY3_SBZDzn05XQPDiQRto7YzQT6U-PnFMIuq_A-OOD20u3DvP9nGyE0pZWsRO5sO1ktaXa9by4KkGHtiTtbbtrsGHEPtxr669aFEr42oxtheDgyJfKQLZCxEEuOhKKcaNknEDX65h1_Y4kfwyQ&state=d0c24aae3e1c6578a378cc34e6eeaa4f1f2c7819b84b63d2" for ::1 at 2019-10-08 21:37:29 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAlQTgwXlLmJwrk8f4AWsS_RWsD3vluIN9Q0xxBDjg5eDHP24UgMK_480rrm4-fTa8BHKyEyQcvq7R5m8PCCFpEZOTEaYauJhZDqMia-rT6pk8EgU8sxS71KzvV0G-xvslf9q3riE7GWhYTPBzG7OQkYbwUQdFNQCQa77yBObq8JSx97k1H23NwoEDCJ-FIY6H2xPOY3_SBZDzn05XQPDiQRto7YzQT6U-PnFMIuq_A-OOD20u3DvP9nGyE0pZWsRO5sO1ktaXa9by4KkGHtiTtbbtrsGHEPtxr669aFEr42oxtheDgyJfKQLZCxEEuOhKKcaNknEDX65h1_Y4kfwyQ", "state"=>"d0c24aae3e1c6578a378cc34e6eeaa4f1f2c7819b84b63d2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 114ms (ActiveRecord: 1.2ms | Allocations: 4742)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:30 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1517)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 7390)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:37:35 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 287)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 6496)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 13725)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:37 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 155)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1527)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 7399)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:38 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:38 +0900
+Started GET "/users/auth/facebook/callback?code=AQA9_vQ_W_m1zNRzVDdbm4ZlE5H6kPrcFjgJQ8g6_Zxazalwb6Mddm91rv6L6koKwXKAPHJJfc6yEDXUV-GlaND7S1j8aRbJ9bHaj6apvG124CXPM4s0L4NlfTEm7c6CJRnIoNSxhKno89Y3R2_FcquLDVtpJd_GdxHM7mfy8otfbLtJJB9vyhwlPtNXwsIUgGYH1TwETZMocoZlPbxvJ1MpuDQtqWLanH8xAGSvLAhkMIJ48-mDRmQpHS6nt8SXG-0gvKCbaSoJ2Z9mN7-djdurve5MxDTekitpamxolCspoP-k20mTNTfeYtamT-ThWJQ6aH83ZjnXsFj5Fya0KKET&state=73b5460a9147c9a906c84c0211d6eba010280271bdecc71f" for ::1 at 2019-10-08 21:37:39 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA9_vQ_W_m1zNRzVDdbm4ZlE5H6kPrcFjgJQ8g6_Zxazalwb6Mddm91rv6L6koKwXKAPHJJfc6yEDXUV-GlaND7S1j8aRbJ9bHaj6apvG124CXPM4s0L4NlfTEm7c6CJRnIoNSxhKno89Y3R2_FcquLDVtpJd_GdxHM7mfy8otfbLtJJB9vyhwlPtNXwsIUgGYH1TwETZMocoZlPbxvJ1MpuDQtqWLanH8xAGSvLAhkMIJ48-mDRmQpHS6nt8SXG-0gvKCbaSoJ2Z9mN7-djdurve5MxDTekitpamxolCspoP-k20mTNTfeYtamT-ThWJQ6aH83ZjnXsFj5Fya0KKET", "state"=>"73b5460a9147c9a906c84c0211d6eba010280271bdecc71f"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 112ms (ActiveRecord: 1.2ms | Allocations: 4722)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:39 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1516)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 7384)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:41 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1517)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 7386)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:43 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:43 +0900
+Started GET "/users/auth/facebook/callback?code=AQAZ8-I9ji0OpA6QKZ3mAxB66fXmh_7VohbvC9C6RvwdAu4scDb20sP3mTNu3EJnj3IgWmmhot3tBBiG_PYVWBBiN-BXQ-ckgt26hzBRu6Wo3jwBTjMg13ayTW93HADx_VL4jGjwsm67rSZPVrIbmZFPyIUhyVEyQPPrqf1Lm_soIBsdCkof_Sk4Um-KfnCD9rUAh6Bm5KtyBg_7Nq30PWT_ZL2lUMVV0NJezYy4nziKUf3q8M_T7b_3IOJo2d45NK3-3zPdDrxs5RckDQKmAP5zEkcXdLjm3xX73S0yp0UqE6a6nkK3_Iq3-MRWxWdka0ZmW5LlwlWs6Rmqk4-SOumx&state=0e05e6e869e9e7f93a79af343bb5a8bfc9d5e0fdf021892a" for ::1 at 2019-10-08 21:37:44 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAZ8-I9ji0OpA6QKZ3mAxB66fXmh_7VohbvC9C6RvwdAu4scDb20sP3mTNu3EJnj3IgWmmhot3tBBiG_PYVWBBiN-BXQ-ckgt26hzBRu6Wo3jwBTjMg13ayTW93HADx_VL4jGjwsm67rSZPVrIbmZFPyIUhyVEyQPPrqf1Lm_soIBsdCkof_Sk4Um-KfnCD9rUAh6Bm5KtyBg_7Nq30PWT_ZL2lUMVV0NJezYy4nziKUf3q8M_T7b_3IOJo2d45NK3-3zPdDrxs5RckDQKmAP5zEkcXdLjm3xX73S0yp0UqE6a6nkK3_Iq3-MRWxWdka0ZmW5LlwlWs6Rmqk4-SOumx", "state"=>"0e05e6e869e9e7f93a79af343bb5a8bfc9d5e0fdf021892a"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 114ms (ActiveRecord: 1.2ms | Allocations: 4733)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:44 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1516)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 7385)
+
+
+Started GET "/" for ::1 at 2019-10-08 21:37:49 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 30)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5674)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:50 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1517)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7384)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:51 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:37:52 +0900
+Started GET "/users/auth/facebook/callback?code=AQDmmSnZAn3aa2f099lif7ILLPUosVwOG3sdz-dpOM3WzKwInC32H_sdmCpQMXSotMW2yW1JPMQd0yj8lKXdS-P85EIat9-8p6h_e0ggVz0FxWLqBB-bZxmaSQkKOtKzsdm0GwGpLHORmvOCLEk7SYf66GxHEthMaSxOaObQ3GAynct_chqpff1anWfMWysjVg-5T2nUdgl0mFMGLEt5FbYlIzf9dP9ZHL6kR6L9-u_NKhVRbtzaNfeLcbnt_LHM3DwVRRRPTJuz9-R-Ai5_-dXJ4A1nClzS9sHigaAl34uUf3ey7RYX7azJ-Mi-dujXUlQlZJp0O5VQRRasYYS7WBhm&state=30d3cd730d9dd2509c4208cb1d58cd2ce0fda1bfe8ab650b" for ::1 at 2019-10-08 21:37:52 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDmmSnZAn3aa2f099lif7ILLPUosVwOG3sdz-dpOM3WzKwInC32H_sdmCpQMXSotMW2yW1JPMQd0yj8lKXdS-P85EIat9-8p6h_e0ggVz0FxWLqBB-bZxmaSQkKOtKzsdm0GwGpLHORmvOCLEk7SYf66GxHEthMaSxOaObQ3GAynct_chqpff1anWfMWysjVg-5T2nUdgl0mFMGLEt5FbYlIzf9dP9ZHL6kR6L9-u_NKhVRbtzaNfeLcbnt_LHM3DwVRRRPTJuz9-R-Ai5_-dXJ4A1nClzS9sHigaAl34uUf3ey7RYX7azJ-Mi-dujXUlQlZJp0O5VQRRasYYS7WBhm", "state"=>"30d3cd730d9dd2509c4208cb1d58cd2ce0fda1bfe8ab650b"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 113ms (ActiveRecord: 1.2ms | Allocations: 4722)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:37:53 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1516)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7377)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:38:36 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1521)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7404)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:38:38 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1517)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7383)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:38:39 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 209)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1109)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7026)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:38:40 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:38:40 +0900
+Started GET "/users/auth/facebook/callback?code=AQDu0LJnHw8QTUAnDFu6qhTA8HxZ__C0my-cne6Z6EuR9OifgOMFMxNOW-GPrzl--vQQe7cGgNX_iP9alUUOTbFk74k735Mlc4sLXqKyffWn1gKhV3gwpt8HCRqeyzolMu95xXLS24RkuDxoHZsilb5tCChTRYSf2JooNMurU1RxStnAbyUntvy9ynvuyMJDQHp0UTYZ_ar5gO64IeYemfASQwSmmFQ8BDZxe3CD3Tds5q6uFPbSzGpKssrmtHdV2moLff_gEkJfye97k5RnvWqiPtyW0ke3PxVq29bf3fJ2XoKI-73XHhTQW09OeOrP-a7bwVqgpoucR92nY5XG6zp2&state=b1f847f65f0cdba2abe9973ee4a1056dad6146414eb9fd0d" for ::1 at 2019-10-08 21:38:41 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDu0LJnHw8QTUAnDFu6qhTA8HxZ__C0my-cne6Z6EuR9OifgOMFMxNOW-GPrzl--vQQe7cGgNX_iP9alUUOTbFk74k735Mlc4sLXqKyffWn1gKhV3gwpt8HCRqeyzolMu95xXLS24RkuDxoHZsilb5tCChTRYSf2JooNMurU1RxStnAbyUntvy9ynvuyMJDQHp0UTYZ_ar5gO64IeYemfASQwSmmFQ8BDZxe3CD3Tds5q6uFPbSzGpKssrmtHdV2moLff_gEkJfye97k5RnvWqiPtyW0ke3PxVq29bf3fJ2XoKI-73XHhTQW09OeOrP-a7bwVqgpoucR92nY5XG6zp2", "state"=>"b1f847f65f0cdba2abe9973ee4a1056dad6146414eb9fd0d"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 113ms (ActiveRecord: 1.5ms | Allocations: 4721)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:38:42 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1516)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7377)
+
+
+Started GET "/" for ::1 at 2019-10-08 21:38:54 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5674)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:38:56 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1517)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 7382)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:38:58 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:38:58 +0900
+Started GET "/users/auth/facebook/callback?code=AQCkhK8tD1cT67FyUcNT8CC2OligM45YcojBD4OivY3szJVy1P52UojWrDFGGzSsx5bxXhU_nmrz3pIdboeto9SuDyCTMX24wTNw-htv2rwN4fnPeZRaMc8XcEt6tqX2gXpb5bmcJoeyC5nmXUKgb-njD4DIGEWpYd7jC1KL8PK1nn8Ip1kYBAfhsKi_yTlsxMVq7dzPwpRhZ-ZgD5r_OJrhWac1uxe0KjoNMyc-4d3xBDvoKJ4sSk1q-TGCPr8l1zDHEFr0-yb6eyttvSqRvO250DIHJQOG6F3bmpWWQvlsBVWQ7JrkNywwyuyjmcmh907N-MDXZXRnIdCBhyrBfb0M&state=91fde6af3eca97d06af606d92c8573228f969a9b3fd8bdbb" for ::1 at 2019-10-08 21:38:58 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCkhK8tD1cT67FyUcNT8CC2OligM45YcojBD4OivY3szJVy1P52UojWrDFGGzSsx5bxXhU_nmrz3pIdboeto9SuDyCTMX24wTNw-htv2rwN4fnPeZRaMc8XcEt6tqX2gXpb5bmcJoeyC5nmXUKgb-njD4DIGEWpYd7jC1KL8PK1nn8Ip1kYBAfhsKi_yTlsxMVq7dzPwpRhZ-ZgD5r_OJrhWac1uxe0KjoNMyc-4d3xBDvoKJ4sSk1q-TGCPr8l1zDHEFr0-yb6eyttvSqRvO250DIHJQOG6F3bmpWWQvlsBVWQ7JrkNywwyuyjmcmh907N-MDXZXRnIdCBhyrBfb0M", "state"=>"91fde6af3eca97d06af606d92c8573228f969a9b3fd8bdbb"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 110ms (ActiveRecord: 1.4ms | Allocations: 4724)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:38:59 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1516)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7379)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:44:33 +0900
+  
+SyntaxError (/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/models/user.rb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+        image:  auth.info.image
+        ^~~~~
+/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/models/user.rb:21: syntax error, unexpected ')', expecting keyword_end
+      )
+      ^
+/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/models/user.rb:26: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/user.rb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/user.rb:21: syntax error, unexpected ')', expecting keyword_end
+app/models/user.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+app/models/user.rb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/user.rb:21: syntax error, unexpected ')', expecting keyword_end
+app/models/user.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+app/models/user.rb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/user.rb:21: syntax error, unexpected ')', expecting keyword_end
+app/models/user.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:10 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1619)
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 16467)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:12 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:12 +0900
+Started GET "/users/auth/facebook/callback?code=AQCO_LrP8jDMYSH5_DbTZXS67zd_K5N2X0ta89Gau6nUKiwhP0INYVwlys9UGC1umHLw6yXDsuYMSebUvmJZcml7SUTPP198tSbpSm8SIN9EAksX9Qm0cNTqqP6RlKiHij0helCaK29fVHvJciqDI4wRRcGfeQWdK0tnuelSAIrHMONIRKzI2PP5FLDFQQIQqUbE6XxWCMCP8bbPcy2hIPVXcEBvSehmn3wxP_Rw39eNjM1iKfM7p5vKOFnW1qKtDyenMNdBo2pSLJCHD3laaP5XWfq3rMyCYDQTrrY7cLQcCZxPd7C7M4Nn5YuTbEfw7rfo8bOstLcOJhOIzNdkAcBX&state=77eb7e27c827180150cbda2282fc8e36d6e9960a2053df65" for ::1 at 2019-10-08 21:45:12 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCO_LrP8jDMYSH5_DbTZXS67zd_K5N2X0ta89Gau6nUKiwhP0INYVwlys9UGC1umHLw6yXDsuYMSebUvmJZcml7SUTPP198tSbpSm8SIN9EAksX9Qm0cNTqqP6RlKiHij0helCaK29fVHvJciqDI4wRRcGfeQWdK0tnuelSAIrHMONIRKzI2PP5FLDFQQIQqUbE6XxWCMCP8bbPcy2hIPVXcEBvSehmn3wxP_Rw39eNjM1iKfM7p5vKOFnW1qKtDyenMNdBo2pSLJCHD3laaP5XWfq3rMyCYDQTrrY7cLQcCZxPd7C7M4Nn5YuTbEfw7rfo8bOstLcOJhOIzNdkAcBX", "state"=>"77eb7e27c827180150cbda2282fc8e36d6e9960a2053df65"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 111ms (ActiveRecord: 1.0ms | Allocations: 5193)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:13 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1520)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7390)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:13 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:13 +0900
+Started GET "/users/auth/facebook/callback?code=AQCmtTPb3e5c8tvxbcqx0Eu_68qBO6bCf5DtdPfYTV5-XmZ5FzkYWLqOdLsRDPamo55xQByG73vfo9jHJQ5GqdvU9uwLaDRQcxED8jdlVBdR7LeSqFKnLSe1XTEwxtqXf3jr_DOf1hZX_5Oi80roXlKB4y9Pn0Mk6fugNAeUQ83m8bljv2_X_ewJCa548kx6fwmZFbutmYQaWTsizTOJ0GTOjWCH3cPIZKS7gr7hFSjiJ-NhY7AjvLxZu2xUFPyRbopsq17UjpGE4jNX3m7jcVcj6sndqFDYuYgXs2fgBaETwbVx9ABsnnTxmq28meswfRW1I6pSykHtMYOmrLo1sOdn&state=4004f14122e84ae4afb402edc6bc2f8945b5ef9c8763bc0f" for ::1 at 2019-10-08 21:45:14 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCmtTPb3e5c8tvxbcqx0Eu_68qBO6bCf5DtdPfYTV5-XmZ5FzkYWLqOdLsRDPamo55xQByG73vfo9jHJQ5GqdvU9uwLaDRQcxED8jdlVBdR7LeSqFKnLSe1XTEwxtqXf3jr_DOf1hZX_5Oi80roXlKB4y9Pn0Mk6fugNAeUQ83m8bljv2_X_ewJCa548kx6fwmZFbutmYQaWTsizTOJ0GTOjWCH3cPIZKS7gr7hFSjiJ-NhY7AjvLxZu2xUFPyRbopsq17UjpGE4jNX3m7jcVcj6sndqFDYuYgXs2fgBaETwbVx9ABsnnTxmq28meswfRW1I6pSykHtMYOmrLo1sOdn", "state"=>"4004f14122e84ae4afb402edc6bc2f8945b5ef9c8763bc0f"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:14 +0900
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 112ms (ActiveRecord: 2.3ms | Allocations: 5828)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:14 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1517)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7396)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:16 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:16 +0900
+Started GET "/users/auth/facebook/callback?code=AQAWUWM2ur-klCrwzZ-hIhnDQ7USt33TtKFN27Hss4jWUb0Ukm82LIG9zRE4tAsQfRHSx6OX7TkvkZbGCPzAe7KeicWfvC2xNXZ5JLy67LHfQYNHpXzy7ScxL1oX24hZeV9bneSKMNzb1d1LXxze43Gh3vd7nVFsJq2cTNc1IDvNJRRHwmqaAYPYWKm036wNPcUlf7t42i3-_VdvlRyg7EJlraScrQ0hjKQHxk3b4SUaaJ3fPZijaIGF6ORUKFPchYDriTJXcZnCfxG5Mdz3tR4jBTw8uqGwO3fxSHaRv-VaqMUH3VArndxpItzffMDyco1cxO8GS-I_dna6x63XJknl&state=68ce60c0e6f8e053848eb2494942e75c6cac5f7e9bf61f44" for ::1 at 2019-10-08 21:45:16 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAWUWM2ur-klCrwzZ-hIhnDQ7USt33TtKFN27Hss4jWUb0Ukm82LIG9zRE4tAsQfRHSx6OX7TkvkZbGCPzAe7KeicWfvC2xNXZ5JLy67LHfQYNHpXzy7ScxL1oX24hZeV9bneSKMNzb1d1LXxze43Gh3vd7nVFsJq2cTNc1IDvNJRRHwmqaAYPYWKm036wNPcUlf7t42i3-_VdvlRyg7EJlraScrQ0hjKQHxk3b4SUaaJ3fPZijaIGF6ORUKFPchYDriTJXcZnCfxG5Mdz3tR4jBTw8uqGwO3fxSHaRv-VaqMUH3VArndxpItzffMDyco1cxO8GS-I_dna6x63XJknl", "state"=>"68ce60c0e6f8e053848eb2494942e75c6cac5f7e9bf61f44"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 115ms (ActiveRecord: 1.7ms | Allocations: 4821)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:17 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1517)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7379)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:23 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:45:23 +0900
+Started GET "/users/auth/facebook/callback?code=AQAbR-y72LZXGppha-WfXWG_8dXoDnRKR_finXgdyiyNMNBz7JC6XjTfqHKoh-woTeTNVkcpvQwM6Pj7owi_G9CUI9t0AwsC0u-uaHXUNG0jepmnAdbc9knldUoXLdgk489joL7i9yaL0mabW-7J0Jp8ETRJjEMEmcv1R1Rm8hHm69D6IAPvqp_98Wmf67jSVtpfonxYuPyMZ8CMlELoCvgudt9vf7ZF0n-OabQxgmhQs8BNH1lp5LpSTEfe_4ZlCY1IPB9fw4289rjbB7gYIeaKk-wnh9ee_C9ZXFJBFSlWs93w6bLzxTBKkP5zSESf1fSi1uLH3njgx2WzV0gA-RQq&state=8a339a159181f08fea731868afd6f4d99be8ee7afe711f2b" for ::1 at 2019-10-08 21:45:23 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAbR-y72LZXGppha-WfXWG_8dXoDnRKR_finXgdyiyNMNBz7JC6XjTfqHKoh-woTeTNVkcpvQwM6Pj7owi_G9CUI9t0AwsC0u-uaHXUNG0jepmnAdbc9knldUoXLdgk489joL7i9yaL0mabW-7J0Jp8ETRJjEMEmcv1R1Rm8hHm69D6IAPvqp_98Wmf67jSVtpfonxYuPyMZ8CMlELoCvgudt9vf7ZF0n-OabQxgmhQs8BNH1lp5LpSTEfe_4ZlCY1IPB9fw4289rjbB7gYIeaKk-wnh9ee_C9ZXFJBFSlWs93w6bLzxTBKkP5zSESf1fSi1uLH3njgx2WzV0gA-RQq", "state"=>"8a339a159181f08fea731868afd6f4d99be8ee7afe711f2b"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 111ms (ActiveRecord: 1.3ms | Allocations: 4822)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:24 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1517)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7381)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:45:49 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 667)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 48.3ms | Allocations: 51263)
+Completed 200 OK in 1062ms (Views: 1029.8ms | ActiveRecord: 10.2ms | Allocations: 1585064)
+
+
+Started GET "/" for ::1 at 2019-10-08 21:45:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 166)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 6748)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:45:55 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2068)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 9495)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:45:55 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 209)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1108)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7039)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:46:01 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:46:01 +0900
+Started GET "/users/auth/facebook/callback?code=AQDik00xLBcawIouN4gnDsKq6Xx4EbhDKhrZFJvgluaDxPJmIPBofeH3q5n5oW-ZNiaBUh9y0zJo1lvcdJTo_CDs01dkQI45GkA5b1bXGExlu85R3FQz2OYIvVI5BN7EgMQ0mnteCoLQ0HM5WE5ZdgfdfMP4snsxamqdRzmCFKgZCM_0Uao-n_azTIZArcIURYMOeaB-kWlcZBjSJRCKIHixfkWQnuGQzfgvnhyf4X6p0QOWD8vApGy5XnEEVoYN_QtSVvMARAl-F1IZTfGzZ6HgA8RbToEtGspeeTwxy4S85hxo4pbSx5RT04qVai3NPlQAUtjCtbCsMac2NgmzVKvo&state=bd96807cd5738384baad0a501a235e147e0452a6509b6a2f" for ::1 at 2019-10-08 21:46:02 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDik00xLBcawIouN4gnDsKq6Xx4EbhDKhrZFJvgluaDxPJmIPBofeH3q5n5oW-ZNiaBUh9y0zJo1lvcdJTo_CDs01dkQI45GkA5b1bXGExlu85R3FQz2OYIvVI5BN7EgMQ0mnteCoLQ0HM5WE5ZdgfdfMP4snsxamqdRzmCFKgZCM_0Uao-n_azTIZArcIURYMOeaB-kWlcZBjSJRCKIHixfkWQnuGQzfgvnhyf4X6p0QOWD8vApGy5XnEEVoYN_QtSVvMARAl-F1IZTfGzZ6HgA8RbToEtGspeeTwxy4S85hxo4pbSx5RT04qVai3NPlQAUtjCtbCsMac2NgmzVKvo", "state"=>"bd96807cd5738384baad0a501a235e147e0452a6509b6a2f"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 113ms (ActiveRecord: 1.3ms | Allocations: 7316)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:46:03 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 155)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1534)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7418)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:50:41 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 209)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1109)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7056)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:50:42 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:50:42 +0900
+Started GET "/users/auth/facebook/callback?code=AQAjUu61A-dud1qYBR9-hSHdYbk7rq5PKEuRwQ3_ZMzOVVYUD8hoF4An0VjS4QcEViqpK7HShHmMu7I3MVo4l115ulCSCVEUIXehW9C7hK4f_FE2loulRS8fHCqwbWiaO1bPECjQoCV7JAz724_4Ixc0xIt3ileWXk8nJHayRhAPwYREuLFcuv5STGaXeCbUveVbiYX3WQIHxcnIEDIG35ajx656I5yHrYJ-EOXfC3yHkS19Rm5TADMv-bBpvsq8IL45v74qQcCHgFwMJ5pfDWD0TiIKM4X8oDZqsjiaUVRli-xr48v_cpKZhoKDbLyQXSzUI7YnmvBYQ1AYOmOi4a7A&state=9cc083da457844f1f140a4028d87549d99c49ba9b72390e7" for ::1 at 2019-10-08 21:50:43 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAjUu61A-dud1qYBR9-hSHdYbk7rq5PKEuRwQ3_ZMzOVVYUD8hoF4An0VjS4QcEViqpK7HShHmMu7I3MVo4l115ulCSCVEUIXehW9C7hK4f_FE2loulRS8fHCqwbWiaO1bPECjQoCV7JAz724_4Ixc0xIt3ileWXk8nJHayRhAPwYREuLFcuv5STGaXeCbUveVbiYX3WQIHxcnIEDIG35ajx656I5yHrYJ-EOXfC3yHkS19Rm5TADMv-bBpvsq8IL45v74qQcCHgFwMJ5pfDWD0TiIKM4X8oDZqsjiaUVRli-xr48v_cpKZhoKDbLyQXSzUI7YnmvBYQ1AYOmOi4a7A", "state"=>"9cc083da457844f1f140a4028d87549d99c49ba9b72390e7"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shibudai1006@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `name`, `image`, `uid`, `provider`) VALUES ('shibudai1006@gmail.com', '$2a$11$W9d8C4kPyD7G39TxfyAyTuVUM/G58SJpNO8DoTJ3ZRKdjOBv88EDi', '2019-10-08 12:50:43.814915', '2019-10-08 12:50:43.814915', '渋谷 大輔', NULL, '2386827411580261', 'facebook')[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:14:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 115ms (ActiveRecord: 2.8ms | Allocations: 5467)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:50:43 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1114)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 6810)
+
+
+Started GET "/class" for ::1 at 2019-10-08 21:50:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-08 21:57:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1110)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2737)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%if user_signed_in ?%>
+  <%= link_to "編集", "/users/edit" %>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%if user_signed_in ?%>
+3:      <%= link_to "編集", "/users/edit" %>
+4:      <%=current_user.name %><br />
+5:      <%=current_user.email %><br />
+6:      <img src=<%= current_user.image %> class = "icon_image">
+7:    <%end%>
+  
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/edit" for ::1 at 2019-10-08 21:57:28 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2212)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 11904)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:57:58 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1939)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:57:58 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1108)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2746)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%if user_signed_in ?%>
+  <%= link_to "編集", "/users/edit" %>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%if user_signed_in ?%>
+3:      <%= link_to "編集", "/users/edit" %>
+4:      <%=current_user.name %><br />
+5:      <%=current_user.email %><br />
+6:      <img src=<%= current_user.image %> class = "icon_image">
+7:    <%end%>
+  
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:3: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/edit" for ::1 at 2019-10-08 21:58:14 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2146)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.4ms | Allocations: 11794)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-08 21:58:18 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 1925)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:58:18 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1108)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2557)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%= link_to "編集", "/users/edit" %>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%= link_to "編集", "/users/edit" %>
+3:    
+4:    <%if user_signed_in ?%>
+5:      <%=current_user.name %><br />
+6:      <%=current_user.email %><br />
+7:      <img src=<%= current_user.image %> class = "icon_image">
+8:    <%end%>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-10-08 21:58:20 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 6776)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:58:21 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1930)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:58:21 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1094)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1686)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%= link_to "編集", "/users/edit" %>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%= link_to "編集", "/users/edit" %>
+3:    
+4:    <%if user_signed_in ?%>
+5:      <%=current_user.name %><br />
+6:      <%=current_user.email %><br />
+7:      <img src=<%= current_user.image %> class = "icon_image">
+8:    <%end%>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-10-08 21:58:22 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 6507)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:58:26 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1094)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1657)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%= link_to "編集", "/users/edit" %>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%= link_to "編集", "/users/edit" %>
+3:    
+4:    <%if user_signed_in ?%>
+5:      <%=current_user.name %><br />
+6:      <%=current_user.email %><br />
+7:      <img src=<%= current_user.image %> class = "icon_image">
+8:    <%end%>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+Started DELETE "/users/sign_out" for ::1 at 2019-10-08 21:58:31 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/C69LMH/nKPPKiyF4Ry4KKfZR+nOdUFtzbRa49D/nv7UeBeSGs5VmS4UPihYDGaQBotuNL5s7fG5Rvye6YGAsQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 3064)
+
+
+Started GET "/" for ::1 at 2019-10-08 21:58:31 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5625)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-08 21:58:32 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 631)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1999)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 9300)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:58:34 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-08 21:58:34 +0900
+Started GET "/users/auth/facebook/callback?code=AQAUpiuPg_JD-0_aaXN8Ls6YcxrqanDOO6nmO1zicKvLJGPAUqZJKls4rOxUc6nEXh6f21JobWs6GurmIZrfgzHi5dIM1BCIkbAsXihZ3TshNst0P-u8urBsdvby-tXxN69csIjNE8FXFf6oXxLOZZ2nCfvE8famHqyffb5Ns4YIwZLJIJR7QUwp58HGNl7-LSiQwWIVSpEzV0L7vbO_Fl7iJjwWFBxaFvTHdjVXFW55qraEEH_pYvYjQSGm6S2__VVnSNWhGQ-V8g7-1QInX96-9Ol5N7blPAzX9rij7yLJXoPjFL87l6O9RAE_2nktI-njADdbK04rEglLwnWG-f8L&state=fa3c5302b91b115c646e1e2f0e9193074076a2bef8734b0c" for ::1 at 2019-10-08 21:58:35 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAUpiuPg_JD-0_aaXN8Ls6YcxrqanDOO6nmO1zicKvLJGPAUqZJKls4rOxUc6nEXh6f21JobWs6GurmIZrfgzHi5dIM1BCIkbAsXihZ3TshNst0P-u8urBsdvby-tXxN69csIjNE8FXFf6oXxLOZZ2nCfvE8famHqyffb5Ns4YIwZLJIJR7QUwp58HGNl7-LSiQwWIVSpEzV0L7vbO_Fl7iJjwWFBxaFvTHdjVXFW55qraEEH_pYvYjQSGm6S2__VVnSNWhGQ-V8g7-1QInX96-9Ol5N7blPAzX9rij7yLJXoPjFL87l6O9RAE_2nktI-njADdbK04rEglLwnWG-f8L", "state"=>"fa3c5302b91b115c646e1e2f0e9193074076a2bef8734b0c"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms | Allocations: 1089)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:58:35 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1094)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1664)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+<%= link_to "編集", "/users/edit" %>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    <%= link_to "編集", "/users/edit" %>
+3:    
+4:    <%if user_signed_in ?%>
+5:      <%=current_user.name %><br />
+6:      <%=current_user.email %><br />
+7:      <img src=<%= current_user.image %> class = "icon_image">
+8:    <%end%>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:5: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:10: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/show" for ::1 at 2019-10-08 21:59:01 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1089)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2709)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    
+3:    <%if user_signed_in ?%>
+4:      <%=current_user.name %><br />
+5:      <%=current_user.email %><br />
+6:      <img src=<%= current_user.image %> class = "icon_image">
+7:    <%end%>
+  
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/users/sign_in" for ::1 at 2019-10-08 21:59:05 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"zId/yz6txvDjQgLkbZKeGdbShWHcgGPIwI0QZXIHKmz3/mnoa5FlUBrtbmEMYv70sX8Upa4KWUytlgJ2z8mmFQ==", "user"=>{"email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms | Allocations: 1932)
+
+
+Started GET "/show" for ::1 at 2019-10-08 21:59:05 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1075)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1647)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>ユーザー情報</h1>
+
+<%if user_signed_in ?%>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
+<%end%>
+
+):
+1:    <h1>ユーザー情報</h1>
+2:    
+3:    <%if user_signed_in ?%>
+4:      <%=current_user.name %><br />
+5:      <%=current_user.email %><br />
+6:      <img src=<%= current_user.image %> class = "icon_image">
+7:    <%end%>
+  
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/users/show.html.erb:4: syntax error, unexpected ';', expecting ':'
+app/views/users/show.html.erb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/sign_in" for ::1 at 2019-10-08 22:00:11 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1927)
+
+
+Started GET "/show" for ::1 at 2019-10-08 22:00:12 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:4
+  Rendered users/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1090)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 8028)
+
+
+Started GET "/class" for ::1 at 2019-10-08 22:00:12 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-08 22:00:38 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1258)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 8157)
+
+
+Started GET "/class" for ::1 at 2019-10-08 22:00:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-08 22:01:14 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2145)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 11239)
+
+
+Started GET "/class" for ::1 at 2019-10-08 22:01:23 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-08 22:02:10 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:1
+  Rendered users/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1103)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 8034)
+
+
+Started GET "/class" for ::1 at 2019-10-08 22:02:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-08 22:02:35 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1085)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 8003)
+
+
+Started GET "/class" for ::1 at 2019-10-08 22:02:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
