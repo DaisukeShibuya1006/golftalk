@@ -60,5 +60,5 @@ gem 'devise-i18n-views'
 
 gem 'carrierwave'
 gem 'omniauth'
-gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'dotenv-rails'
