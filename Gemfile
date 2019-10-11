@@ -64,3 +64,5 @@ gem 'omniauth-facebook'
 gem 'dotenv-rails'
 
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'devise-bootstrap-views'
