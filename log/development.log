@@ -8166,3 +8166,2389 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 15340)
 
 
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:41:51 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 299)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1247)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 14906)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-11 14:42:38 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"vlHy+qGatoTbYfY1SIaRRsSEGrABJ4A2VpPEgB6CHXfAzgCT1f4Mn2FyJw5XlBgfqGQjR66MXZKKJ0LTII0cKA==", "user"=>{"email"=>"abeshinnosuke1006@gmacom", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'abeshinnosuke1006@gmacom' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms | Allocations: 2006)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"vlHy+qGatoTbYfY1SIaRRsSEGrABJ4A2VpPEgB6CHXfAzgCT1f4Mn2FyJw5XlBgfqGQjR66MXZKKJ0LTII0cKA==", "user"=>{"email"=>"abeshinnosuke1006@gmacom", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 299)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1248)
+Completed 200 OK in 119ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 14721)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 14:42:45 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 14:42:45 +0900
+Started GET "/users/auth/facebook/callback?code=AQBJVTQset8vjwc0E-y1f-cSCPjEO2H_G_zLmDW5orNRZ77VzGJXo_zSMTFsmxSwrWuuP7P60-voVww8i-GjxgENTQHp8y7IyZ3hlCgexNsliYvWgg5tu6e6uCCfq3fmuXeVpxVYgG_Msznz65ktyYV00VHZZ7cVe1WMMyIT4WT7qspDoKsFk_eALXt3CAl-al7lHRxWoIvcIdI8_Yy32E_AWNn6K7oNxWuVdqMdg33sCgXSDJcDAQMdVJkuOGdCtlp4yCzN-4QqWhpKF2zlt9MZ9i8o_edODoqzAGViTA-vWID8GHOXKS0OVyK2-wmhx1RrjRYdxt5W8FmZeVSs3qlR&state=8ec43df99463abad56532f9c30a80a0eb139556a44cf2f93" for ::1 at 2019-10-11 14:42:46 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBJVTQset8vjwc0E-y1f-cSCPjEO2H_G_zLmDW5orNRZ77VzGJXo_zSMTFsmxSwrWuuP7P60-voVww8i-GjxgENTQHp8y7IyZ3hlCgexNsliYvWgg5tu6e6uCCfq3fmuXeVpxVYgG_Msznz65ktyYV00VHZZ7cVe1WMMyIT4WT7qspDoKsFk_eALXt3CAl-al7lHRxWoIvcIdI8_Yy32E_AWNn6K7oNxWuVdqMdg33sCgXSDJcDAQMdVJkuOGdCtlp4yCzN-4QqWhpKF2zlt9MZ9i8o_edODoqzAGViTA-vWID8GHOXKS0OVyK2-wmhx1RrjRYdxt5W8FmZeVSs3qlR", "state"=>"8ec43df99463abad56532f9c30a80a0eb139556a44cf2f93"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms | Allocations: 1088)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:42:47 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 958)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 14320)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:42:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-11 14:45:56 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1093)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.4ms | Allocations: 15811)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:45:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-11 14:45:57 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 369.8ms | Allocations: 235733)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.5ms | Allocations: 239870)
+
+
+  
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x00007fefc3520200>:0x00007fefc3510260>):
+    1: <h1><%= t('.title', resource: resource_name.to_s.humanize) %></h1>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    4:   <%= bootstrap_devise_error_messages! %>
+    5: 
+    6:   <div class="form-group">
+    7:     <%= f.label :email %>
+  
+app/views/devise/registrations/edit.html.erb:4
+app/views/devise/registrations/edit.html.erb:3
+Started GET "/users/class" for ::1 at 2019-10-11 14:45:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-11 14:46:03 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 957)
+Started GET "/class" for ::1 at 2019-10-11 14:46:03 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.4ms | Allocations: 45264)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:46:03 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1407)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 1.8ms | Allocations: 25910)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:46:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-11 14:46:52 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1092)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 15813)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:46:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-11 14:46:53 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 349.0ms | Allocations: 235700)
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.6ms | Allocations: 239839)
+
+
+  
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x00007fefcd2c5cd0>:0x00007fefcd2c4010>):
+    1: <h1><%= t('.title', resource: resource_name.to_s.humanize) %></h1>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    4:   <%= bootstrap_devise_error_messages! %>
+    5: 
+    6:   <div class="form-group">
+    7:     <%= f.label :email %>
+  
+app/views/devise/registrations/edit.html.erb:4
+app/views/devise/registrations/edit.html.erb:3
+Started GET "/users/class" for ::1 at 2019-10-11 14:46:53 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-11 14:47:25 +0900
+Processing by UsersController#show as HTML
+Started GET "/class" for ::1 at 2019-10-11 14:47:25 +0900
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1103)
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.8ms | Allocations: 76956)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:47:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-11 14:47:25 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3197)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 1.4ms | Allocations: 47864)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:47:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-11 14:47:26 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2855)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.4ms | Allocations: 19650)
+
+
+Started GET "/users/class" for ::1 at 2019-10-11 14:47:26 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/class" for ::1 at 2019-10-11 14:47:37 +0900
+Started GET "/show" for ::1 at 2019-10-11 14:47:37 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 41.4ms | Allocations: 25831)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 1.9ms | Allocations: 48465)
+
+
+Started GET "/users/class" for ::1 at 2019-10-11 14:47:38 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-11 14:48:12 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3014)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.3ms | Allocations: 20308)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-11 14:48:21 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2190)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.6ms | Allocations: 16995)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:48:27 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1914)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:48:27 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1092)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.3ms | Allocations: 15316)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:48:27 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-11 14:48:30 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 14549)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:48:33 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1929)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:48:33 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 957)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 14321)
+
+
+Started GET "/users/class" for ::1 at 2019-10-11 14:48:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-10-11 14:48:35 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ofG0JDlsEIKYEvULm33pY6OeX8tjDmMAbG4LQdD3w69tmJJG7p249fKUJ6ZMlsgDh5DPwB46WB7PITpry7NcSA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2390)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:48:35 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 13418)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:48:36 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2814)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 17131)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-11 14:49:16 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 370)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:49:16 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2261)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 18460)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 14:49:19 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 14:49:20 +0900
+Started GET "/users/auth/facebook/callback?code=AQAIv6bZnudLMyftXE2Wo-pBTN59w6McKkxM1eXajPvN9r4gn_zAky8kPjKXlUcN1XkvlG4QWalxeTHEzzHHwXkN7aLuN1QuRHR9KRhJMnQANB7kJn6TJo7WaIz7defHnYmq0v0r-5XAtVvSGRKmVWph3K4z4jU7eMDTpNZaZ92pVJBFwNEiXf-OOS3l9BGY7dYSZkifvV8GJxMKum8oYLf7w_Vjf3U6jeypKV2ApnG5hpY9vrG3Fg9XPbNBxq9T7VWyN0YmKbduhTDKHYKz9595cssUK2_z6Dv4xVf-Rp1X_InIYXojMBD7y0f8HY7t3fvWgzIFRQF7AhlUI0wrSxI2&state=0be5939edfba883a6d16e20c97e2a6f7e303aafc6518a1ec" for ::1 at 2019-10-11 14:49:20 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAIv6bZnudLMyftXE2Wo-pBTN59w6McKkxM1eXajPvN9r4gn_zAky8kPjKXlUcN1XkvlG4QWalxeTHEzzHHwXkN7aLuN1QuRHR9KRhJMnQANB7kJn6TJo7WaIz7defHnYmq0v0r-5XAtVvSGRKmVWph3K4z4jU7eMDTpNZaZ92pVJBFwNEiXf-OOS3l9BGY7dYSZkifvV8GJxMKum8oYLf7w_Vjf3U6jeypKV2ApnG5hpY9vrG3Fg9XPbNBxq9T7VWyN0YmKbduhTDKHYKz9595cssUK2_z6Dv4xVf-Rp1X_InIYXojMBD7y0f8HY7t3fvWgzIFRQF7AhlUI0wrSxI2", "state"=>"0be5939edfba883a6d16e20c97e2a6f7e303aafc6518a1ec"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms | Allocations: 1088)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:49:21 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1093)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 15322)
+
+
+Started GET "/class" for ::1 at 2019-10-11 14:49:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-11 14:49:22 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3257)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.4ms | Allocations: 19484)
+
+
+Started GET "/users/class" for ::1 at 2019-10-11 14:49:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/users" for ::1 at 2019-10-11 14:49:42 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"ScRXq8cm8lDo1uPryPp99NFWAMWX6FHOmeEMmb9CFoKxkESsae6upk3p20FtjRjBNV4WhflN4l7csnGuR9F+iQ==", "user"=>{"name"=>"渋谷大輔", "email"=>"shibudai1006@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefc6043888 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-9c8h85.jpg>, @original_filename="golf-clubs-1633748_640 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"golf-clubs-1633748_640 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 240)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2581)
+Completed 200 OK in 131ms (Views: 14.7ms | ActiveRecord: 0.9ms | Allocations: 22350)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-11 14:49:52 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LtfB/usmOiw+xBWDy6d2lrJZ9Ek9fVOVHaD2Z2gUTN7aPcjpI6IOKGiCQjlesskp7vyNtGiaILhVXNyoJVbB+w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 2397)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:49:52 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 13690)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:49:53 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2191)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 16461)
+
+
+Started POST "/users" for ::1 at 2019-10-11 14:50:18 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"zYEhpRzZCJQiEvqQG07pdlP4KoiwzythWG0steZQaL138/IEF9c9wHCF+UlOMG2lv1Evzn57YDSrq4lrvuHuFw==", "user"=>{"name"=>"山田太郎", "email"=>"yamada@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefcc9a8a58 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-1jgbzou.png>, @original_filename="スクリーンショット 2019-10-07 19.26.12.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-07 19.26.12.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"アカウント登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'yamada@gmail.com' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1926)
+Completed 200 OK in 134ms (Views: 15.5ms | ActiveRecord: 2.3ms | Allocations: 24155)
+
+
+Started POST "/users" for ::1 at 2019-10-11 14:51:02 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"3bQ+o5fLQykbdXdwz7pC8b6ZfAqdwqZ2juNXiSznQG/drjyUBxLNhfnODGLbcZN3/huFP5R9kU7qLHGNxnmlxQ==", "user"=>{"name"=>"ななし", "email"=>"nanashi@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefc5613980 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-10z0j20.png>, @original_filename="スクリーンショット 2019-10-10 16.14.56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-10 16.14.56.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"アカウント登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nanashi@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `name`, `image`) VALUES ('nanashi@gmail.com', '$2a$11$V3FkfAT.4.orOck.tR4A4uqQ0BW4s/OAOOu3b6tbST8Ap0VIrZsoO', '2019-10-11 05:51:02.981775', '2019-10-11 05:51:02.981775', 'ななし', 'スクリーンショット_2019-10-10_16.14.56.png')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 120ms (ActiveRecord: 2.2ms | Allocations: 8049)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:51:02 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1133)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 14499)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-11 14:51:07 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2401)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.4ms | Allocations: 17203)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-11 14:51:10 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2397)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.4ms | Allocations: 17196)
+
+
+Started PUT "/users" for ::1 at 2019-10-11 14:51:17 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"xJcH+7KYgZXA2C3mmOJGxybO+5q+IMXogLODWflln7pfXJ/Gb9iJt2dy5R+cFmNVhdpx7nxL5ll2EBqmJdKUdQ==", "user"=>{"name"=>"ななし", "email"=>"nanashi@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefcdaec5f8 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-1ip504v.png>, @original_filename="スクリーンショット 2019-10-02 20.34.10.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-02 20.34.10.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 227)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2563)
+Completed 200 OK in 124ms (Views: 14.3ms | ActiveRecord: 0.8ms | Allocations: 19983)
+
+
+Started PUT "/users" for ::1 at 2019-10-11 14:52:01 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"eWgpB9zefNljIvhNT3XSmxnNUtnaSTQwqjhB2QIlapJ5ciswTAfydYGZg19bvgMdWU+r7NP2AwjO92fd6LuPOA==", "user"=>{"name"=>"ななし", "email"=>"nanashi@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefcd7d3ec0 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-ft6t9v.png>, @original_filename="スクリーンショット 2019-10-02 20.34.10.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-02 20.34.10.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms (ActiveRecord: 0.8ms | Allocations: 4964)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:52:01 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 14293)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:52:04 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 1938)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:52:04 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1132)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 14482)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-11 14:52:06 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2396)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.4ms | Allocations: 17198)
+
+
+Started PUT "/users" for ::1 at 2019-10-11 14:52:14 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"LmkDmI/VlTPV7Vw2ru+GJV0X3+eVPfocDSFC3SgU2me1opulUpWdEXJHlM+qG6O3/gNVk1dW2a37gtsi9KPRqA==", "user"=>{"name"=>"ななし", "email"=>"nanashi@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fefcf611518 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191011-14955-1wmnyea.png>, @original_filename="スクリーンショット 2019-10-02 20 (4).50.24.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-02 20 (4).50.24.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms (ActiveRecord: 0.8ms | Allocations: 4934)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:52:14 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 14293)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:52:19 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1931)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:52:19 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1132)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 14496)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:52:24 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms | Allocations: 1924)
+
+
+Started GET "/show" for ::1 at 2019-10-11 14:52:24 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1132)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 14493)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-10-11 14:52:40 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZJAaLP+R5ItC76obPp0ya98EITrLc4tbLoQKBwTXgYpkihgbb0hqJ6BU0QkqVuPtn4bYD8LMvGNKSywD7klkIA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 14 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 2445)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:52:40 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 13421)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:52:41 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1259)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 14924)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:52:44 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1726)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms | Allocations: 15324)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:53:51 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 701)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2911)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 19024)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:53:54 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3143)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 19231)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:54:47 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1426)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4351)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary' class="btn_submit"%>
+  </div>
+<% end %>
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary' class="btn_submit"%>
+37:      </div>
+38:    <% end %>
+39:    
+40:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/" for ::1 at 2019-10-11 14:55:03 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+Completed 200 OK in 1331ms (Views: 1329.6ms | ActiveRecord: 0.0ms | Allocations: 1350907)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:55:06 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1415)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2190)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary' class="btn_submit"%>
+  </div>
+<% end %>
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary' class="btn_submit"%>
+37:      </div>
+38:    <% end %>
+39:    
+40:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:36: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:55:13 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3155)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 19317)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:55:31 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3143)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 19231)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:55:51 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1733)
+Completed 200 OK in 1343ms (Views: 1341.7ms | ActiveRecord: 0.0ms | Allocations: 1352103)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:56:07 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1739)
+Completed 200 OK in 1400ms (Views: 1399.2ms | ActiveRecord: 0.0ms | Allocations: 1351596)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:56:32 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1739)
+Completed 200 OK in 1299ms (Views: 1298.4ms | ActiveRecord: 0.0ms | Allocations: 1351320)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:56:39 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1739)
+Completed 200 OK in 1238ms (Views: 1237.5ms | ActiveRecord: 0.0ms | Allocations: 1352648)
+
+
+Started GET "/" for ::1 at 2019-10-11 14:57:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 161)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 14457)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:57:54 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1650)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 16705)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 14:57:59 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1743)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 15351)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 14:58:17 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 299)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1247)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 14901)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:02:23 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3184)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 19296)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:02:25 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1641)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 16679)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:02:53 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1452)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4375)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group" class="btn-submit">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+  </div>
+
+<% end %>
+  <div class="form-group">
+    <%= link_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+  </div>
+
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group" class="btn-submit">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+37:      </div>
+38:    
+39:    <% end %>
+40:      <div class="form-group">
+41:        <%= link_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+42:      </div>
+43:    
+44:    
+45:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:41: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:04:02 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2265)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 18444)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:04:04 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 364.3ms | Allocations: 236926)
+Completed 500 Internal Server Error in 370ms (ActiveRecord: 0.0ms | Allocations: 239076)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fefc356bed0>:0x00007fefc356a328>):
+    38: 
+    39: <% end %>
+    40:   <div class="form-group">
+    41:     <%= f.submit t('/users/sign_in'), class: 'btn btn-primary'%>
+    42:   </div>
+    43: 
+    44: 
+  
+app/views/devise/registrations/new.html.erb:41
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:04:14 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 402.6ms | Allocations: 236893)
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 0.0ms | Allocations: 239836)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fefc6083230>:0x00007fefc6081250>):
+    38: 
+    39: <% end %>
+    40:   <div class="form-group">
+    41:     <%= f.submit t('.sign_in'), class: 'btn btn-primary'%>
+    42:   </div>
+    43: 
+    44: 
+  
+app/views/devise/registrations/new.html.erb:41
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:04:31 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3829)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 19843)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:05:08 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1453)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4375)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group" class="btn-submit">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+  </div>
+
+  <div class="form-group">
+    <%= link_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+  </div>
+<% end %>
+
+
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group" class="btn-submit">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+37:      </div>
+38:    
+39:      <div class="form-group">
+40:        <%= link_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+41:      </div>
+42:    <% end %>
+43:    
+44:    
+45:    
+46:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:05:22 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3242)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 19355)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:05:44 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3144)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 19238)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:06:05 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3177)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 19271)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:06:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1644)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 16699)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:06:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 299)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1247)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 14905)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:06:27 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3259)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 19353)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-11 15:06:28 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"trVxta1bgfpKPHXIkxIzcjIX3meoULOLqBTCzE695qwzRqsqQYfU0IU1Q83moLt9as/7rM3x1QOtoR7Cl4zFIw=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"trVxta1bgfpKPHXIkxIzcjIX3meoULOLqBTCzE695qwzRqsqQYfU0IU1Q83moLt9as/7rM3x1QOtoR7Cl4zFIw=="}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1637)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 16395)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:06:41 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1449)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group" class="btn-submit">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+  </div>
+<% end %>
+
+<%= button_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group" class="btn-submit">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+37:      </div>
+38:    <% end %>
+39:    
+40:    <%= button_to "ログイン", "/users/sign_in" class: 'btn btn-primary'%>
+41:    
+42:    
+43:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:06:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2265)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 18448)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:06:53 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 226)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2649)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 17635)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:09:46 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1449)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4367)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t('.sign_up') %></h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+
+    <% if @minimum_password_length %>
+      <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+    <% end %>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+  </div>
+
+
+  <div class="form-group" class="btn-submit">
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+  </div>
+<% end %>
+
+<%= button_to "ログイン", "/users/sign_in" class="button"%>
+
+
+<%= render 'devise/shared/links' %>
+
+):
+1:    <h1><%= t('.sign_up') %></h1>
+2:    
+3:    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+4:    <%= render "devise/shared/error_messages", resource: resource %>
+5:      <div class="form-group">
+6:        <%= f.label :name %>
+7:        <%= f.text_field :name, autocomplete: 'name', class: 'form-control' %>
+8:      </div>
+9:      <div class="form-group">
+10:        <%= f.label :email %>
+11:        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+12:      </div>
+13:    
+14:      <div class="form-group">
+15:        <%= f.label :password %>
+16:        <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+17:    
+18:        <% if @minimum_password_length %>
+19:          <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+20:        <% end %>
+21:      </div>
+22:    
+23:    
+24:      <div class="form-group">
+25:        <%= f.label :password_confirmation %>
+26:        <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group">
+30:        <%= f.label :image %>
+31:        <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+32:      </div>
+33:    
+34:    
+35:      <div class="form-group" class="btn-submit">
+36:        <%= f.submit t('.sign_up'), class: 'btn btn-primary'%>
+37:      </div>
+38:    <% end %>
+39:    
+40:    <%= button_to "ログイン", "/users/sign_in" class="button"%>
+41:    
+42:    
+43:    <%= render 'devise/shared/links' %>
+  
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+app/views/devise/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:10:13 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3269)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 19421)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:11:18 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3261)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 19350)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:11:34 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3261)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 19357)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:12:12 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3263)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 19359)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:12:13 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1643)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 16697)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:12:31 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3264)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 19357)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:13:01 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1826)
+Completed 200 OK in 1531ms (Views: 1529.3ms | ActiveRecord: 0.0ms | Allocations: 1352373)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:13:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1828)
+Completed 200 OK in 1725ms (Views: 1723.9ms | ActiveRecord: 0.0ms | Allocations: 1351598)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:14:28 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3288)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 19490)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:14:48 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 700)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3269)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 19366)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 15:14:50 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-11 15:14:50 +0900
+Started GET "/users/auth/facebook/callback?code=AQCrA8Waa7_Jk4SB5yMj2BdxNIwuZf6bU7JCmFbXfEIVrPGL4CuEWvA3GpG6WMf7JiP6J6DFlDs43pyKmasdvMrPMu3d5G1YJbGjuNolpBysp4KsCu-J67NTEStR9itf_i-SGoGgbJwacumQl7yUUMWuISYqkRJ05zmAg6Rddl1zAP5v_laaTTralQjpRnIXzXoYxT7lofcToc46-1-6dfWMUBqMk6PJz7rweAd45K0nNFgMEfA4GeqdUIESBXEVa1l6MAIZf44oExqm1vMkeZlna-mH70GIg3fA-KIvxz5-mRzyCpvgiig04jJ4Iw0oHBRsGF-HKaJfvbd70H6sN4w_&state=647365bf57da5255e4d533de904b5048fa701cdf35402b3f" for ::1 at 2019-10-11 15:14:51 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCrA8Waa7_Jk4SB5yMj2BdxNIwuZf6bU7JCmFbXfEIVrPGL4CuEWvA3GpG6WMf7JiP6J6DFlDs43pyKmasdvMrPMu3d5G1YJbGjuNolpBysp4KsCu-J67NTEStR9itf_i-SGoGgbJwacumQl7yUUMWuISYqkRJ05zmAg6Rddl1zAP5v_laaTTralQjpRnIXzXoYxT7lofcToc46-1-6dfWMUBqMk6PJz7rweAd45K0nNFgMEfA4GeqdUIESBXEVa1l6MAIZf44oExqm1vMkeZlna-mH70GIg3fA-KIvxz5-mRzyCpvgiig04jJ4Iw0oHBRsGF-HKaJfvbd70H6sN4w_", "state"=>"647365bf57da5255e4d533de904b5048fa701cdf35402b3f"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms | Allocations: 1089)
+
+
+Started GET "/show" for ::1 at 2019-10-11 15:14:52 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1093)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 15308)
+
+
+Started GET "/class" for ::1 at 2019-10-11 15:14:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-10-11 15:14:53 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kxBTV8UQceUK13B7qO0Yd2x4PiyE68Hy+On78scyZT1rHPWbklVnJMRPv+qS1WTQtxY/keHJaNFXWKuhhJY7OA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 2388)
+
+
+Started GET "/" for ::1 at 2019-10-11 15:14:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 13684)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:14:55 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1833)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 15441)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:15:22 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2217)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 18329)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:15:25 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2263)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 17316)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:15:27 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1435)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 15042)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:15:44 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2209)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 18299)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:16:08 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2218)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 18330)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:16:35 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1433)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 15033)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:17:02 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2207)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 18322)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:17:09 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2164)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 18260)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:17:21 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 779)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2267)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 18443)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:17:21 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2171)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 17165)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:17:23 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1258)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 14917)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:17:56 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1409)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 15017)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:18:48 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2169)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 18272)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:19:21 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1410)
+Completed 200 OK in 1282ms (Views: 1280.5ms | ActiveRecord: 0.0ms | Allocations: 1353141)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:19:35 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1418)
+Completed 200 OK in 1366ms (Views: 1364.6ms | ActiveRecord: 0.0ms | Allocations: 1353319)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:19:54 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1418)
+Completed 200 OK in 1264ms (Views: 1263.4ms | ActiveRecord: 0.0ms | Allocations: 1353044)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:20:01 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1418)
+Completed 200 OK in 1296ms (Views: 1295.5ms | ActiveRecord: 0.0ms | Allocations: 1352073)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:20:07 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1418)
+Completed 200 OK in 1246ms (Views: 1244.5ms | ActiveRecord: 0.0ms | Allocations: 1351647)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:20:11 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2273)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 17373)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:20:14 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1419)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 15024)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:20:42 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 299)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1252)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 14907)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:20:48 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2258)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 18417)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:21:02 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2213)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 18369)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:21:53 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2168)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 17161)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:22:00 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1238)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 14906)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:22:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2227)
+Completed 200 OK in 1361ms (Views: 1360.3ms | ActiveRecord: 0.0ms | Allocations: 1356621)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:23:05 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2238)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 18460)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:23:51 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2175)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 17164)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-11 15:23:52 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 300)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1235)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 14900)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-11 15:24:01 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1409)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 15010)
+
+
