@@ -1,0 +1,6 @@
+<% @post = Post.new unless @post %>
+<%= form_for @post do |f| %>
+  <%= f.file_field :image %>
+  <%= f.submit 'アップロードする'%>
+<% end %>
+<% end %>

@@ -1,0 +1,13 @@
+<% if @posts.present? %>
+<p>
+  <strong>Text:</strong>
+  <%= @post.text %>
+</p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @post.image.url　if @post.image? %>
+</p>
+
+<% end %>
+
+<p>Hello world</p>
