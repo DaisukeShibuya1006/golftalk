@@ -1,29 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.content %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
+<div class="container" class="posts">
+  <h1>投稿一覧</h1>
+<div class="post">
+  <% @blogs.each do |blog| %>
+  <div class="title">
+    <h3>タイトル</h3>
+    <%= blog.title %>
+  </div>
+  <div class="content">
+    <h3>内容</h3>
+    <%= blog.content %><br>
+  </div>
+    <%= link_to '詳細', blog %><br>
+    <%= link_to '編集', edit_blog_path(blog) %><br>
+    <%= link_to '削除', blog, method: :delete, data: { confirm: '本当に削除して良いですか？' } %>
+    <% end %><br>
+ </div>
+</div>

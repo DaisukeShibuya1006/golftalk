@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'posts/index' => 'posts#index'
   get 'posts/new' => 'posts#new'
   post 'posts/complete' => 'posts#create'
+
+  post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
 end
