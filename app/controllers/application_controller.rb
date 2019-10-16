@@ -8,11 +8,12 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    show_path	
+    show_path
   end
   #
   # def after_sign_out_path_for(resource)
   #   new_user_session_path # ログアウト後に遷移するpathを設定
   # end
   #
+
 end

@@ -10,9 +10,10 @@
     <h3>内容</h3>
     <%= blog.content %><br>
   </div>
-    <%= link_to '詳細', blog %><br>
+    <% if blog.uid == current_user.id %>
     <%= link_to '編集', edit_blog_path(blog) %><br>
     <%= link_to '削除', blog, method: :delete, data: { confirm: '本当に削除して良いですか？' } %>
-    <% end %><br>
+    <% end %>
+    <% end %>
  </div>
 </div>
