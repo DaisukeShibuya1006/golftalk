@@ -1,5 +1,6 @@
 
-<p>
+<div class="container">
+  <p>
   <strong>Title:</strong>
   <%= @blog.title %>
 </p>
@@ -9,5 +10,6 @@
   <%= @blog.content %>
 </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<%= link_to '編集する', edit_blog_path(@blog) %> |
+<%= link_to '投稿一覧に戻る', blogs_path %>
+</div>

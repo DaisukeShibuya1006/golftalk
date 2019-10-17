@@ -31030,3 +31030,1547 @@ Processing by BlogsController#new as HTML
 Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 18011)
 
 
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:03:46 +0900
+  [1m[35m (11.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 54.2ms | Allocations: 48928)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 56.3ms | Allocations: 49597)
+Completed 200 OK in 1284ms (Views: 1222.2ms | ActiveRecord: 29.4ms | Allocations: 1632911)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:03:48 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1339)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.4ms | Allocations: 18062)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:03:50 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1520)
+Completed 200 OK in 32ms (Views: 23.4ms | ActiveRecord: 1.1ms | Allocations: 18869)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:03:51 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 91)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 16860)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:03:51 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1243)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 1.1ms | Allocations: 18407)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:03:52 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 748)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 846)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 1.2ms | Allocations: 18039)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:07:31 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.1ms | Allocations: 745)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 842)
+Completed 200 OK in 1432ms (Views: 1428.8ms | ActiveRecord: 0.4ms | Allocations: 1371565)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:09:33 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.5ms | Allocations: 745)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 842)
+Completed 200 OK in 1303ms (Views: 1298.4ms | ActiveRecord: 0.5ms | Allocations: 1371164)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:10:18 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1071)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1439)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.4ms | Allocations: 20716)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:10:20 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.0ms | Allocations: 750)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 848)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.4ms | Allocations: 18028)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:10:21 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1269)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 1.1ms | Allocations: 17925)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:10:21 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1488)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.9ms | Allocations: 18789)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:10:22 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 87)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 16827)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:10:22 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 753)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 851)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.5ms | Allocations: 18029)
+
+
+Started POST "/blogs" for ::1 at 2019-10-17 13:10:28 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"VaybBPZFf5oY40VamE3TFq4yPpF8Pp+dPwP4kSB+M1Day0J+8yjpWjZVDD5NbYdwuCPltZ3fpY1PQGvVnHXqAA==", "blog"=>{"title"=>"今日はOOカントリーでゴルフ", "content"=>"今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (3.1ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('今日はOOカントリーでゴルフ', '今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ', '2019-10-17 04:10:28.886553', '2019-10-17 04:10:28.886553', 5)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/20
+Completed 302 Found in 15ms (ActiveRecord: 8.1ms | Allocations: 4523)
+
+
+Started GET "/blogs/20" for ::1 at 2019-10-17 13:10:28 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 20 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 255)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.5ms | Allocations: 18275)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:10:30 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1350)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.8ms | Allocations: 18501)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:11:36 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.0ms | Allocations: 1071)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1431)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.5ms | Allocations: 20168)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:12:17 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.0ms | Allocations: 1072)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1436)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.5ms | Allocations: 20180)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:13:21 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.4ms | Allocations: 1071)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1431)
+Completed 200 OK in 1240ms (Views: 1235.0ms | ActiveRecord: 0.9ms | Allocations: 1372926)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:14:20 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 750)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 848)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.4ms | Allocations: 18062)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:14:29 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.3ms | Allocations: 745)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 842)
+Completed 200 OK in 1408ms (Views: 1404.5ms | ActiveRecord: 0.4ms | Allocations: 1371721)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:14:57 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1069)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1437)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.5ms | Allocations: 20705)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:15:09 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 1067)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1427)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.9ms | Allocations: 20155)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:15:52 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.2ms | Allocations: 1077)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1437)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 0.5ms | Allocations: 20172)
+
+
+Started POST "/blogs" for ::1 at 2019-10-17 13:15:54 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"U5Et5j9c9QY4XeDba/OOjAw29ta6ugcagZfhWQemncnDqQ41zDZxGk240JrC4+LqUfUCfyBDkHG5KcVSHx8p4A==", "blog"=>{"title"=>"", "content"=>""}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 1055)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1153)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 0.4ms | Allocations: 19625)
+
+
+Started POST "/blogs" for ::1 at 2019-10-17 13:17:10 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"U5Et5j9c9QY4XeDba/OOjAw29ta6ugcagZfhWQemncnDqQ41zDZxGk240JrC4+LqUfUCfyBDkHG5KcVSHx8p4A==", "blog"=>{"title"=>"明日の天気は雨かな？", "content"=>"久しぶりのゴルフだけど、明日は雨で中止かも・・・・。"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (1.0ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('明日の天気は雨かな？', '久しぶりのゴルフだけど、明日は雨で中止かも・・・・。', '2019-10-17 04:17:10.605256', '2019-10-17 04:17:10.605256', 5)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/21
+Completed 302 Found in 12ms (ActiveRecord: 2.3ms | Allocations: 4210)
+
+
+Started GET "/blogs/21" for ::1 at 2019-10-17 13:17:10 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 21 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 247)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.7ms | Allocations: 18136)
+
+
+Started GET "/blogs/21" for ::1 at 2019-10-17 13:18:28 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 21 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 247)
+Completed 200 OK in 28ms (Views: 20.9ms | ActiveRecord: 1.1ms | Allocations: 19537)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:18:29 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 11537)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms | Allocations: 13721)
+
+
+  
+ActionView::Template::Error (Missing partial blogs/_blogs, application/_blogs with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/devise-bootstrap-views-1.1.0/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/devise-i18n-views-0.3.7/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/devise-i18n-1.8.2/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0/app/views"
+  * "/Users/shibuyadaisuke/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionmailbox-6.0.0/app/views"
+):
+    1: <h3 class="text-center">記事を投稿する</h3>
+    2: 
+    3: <%= render 'blogs', blog: @blog %>
+    4: 
+    5: <p class="text-center"><%= link_to '投稿一覧に戻る', blogs_path %></p>
+  
+app/views/blogs/new.html.erb:3
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:18:42 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.0ms | Allocations: 1096)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1457)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 20274)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:18:44 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 758)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 856)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 18030)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:18:45 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1712)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.7ms | Allocations: 19011)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:18:46 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1274)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms | Allocations: 17935)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:18:47 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.3ms | Allocations: 761)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 859)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 0.7ms | Allocations: 18041)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:20:06 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1077)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1441)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.5ms | Allocations: 20182)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:20:06 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.4ms | Allocations: 758)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 856)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 18031)
+
+
+Started POST "/blogs" for ::1 at 2019-10-17 13:20:26 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"AEa0s7zV+GpjiMNEvHweG9Cpt3n7r4apBXhyHuhXigKPIW3Jubhuqk0+iiBpXEp9xrhsXRpOvLl1O+FaVFxTUg==", "blog"=>{"title"=>"新しいアイアンを買いました！", "content"=>"石川遼モデルのアイアンを買いました！"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('新しいアイアンを買いました！', '石川遼モデルのアイアンを買いました！', '2019-10-17 04:20:26.359472', '2019-10-17 04:20:26.359472', 5)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/22
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms | Allocations: 4254)
+
+
+Started GET "/blogs/22" for ::1 at 2019-10-17 13:20:26 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 22 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 253)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 1.0ms | Allocations: 18146)
+
+
+Started GET "/blogs/22/edit" for ::1 at 2019-10-17 13:20:40 +0900
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 22 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.6ms | Allocations: 823)
+  Rendered blogs/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1095)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.8ms | Allocations: 18964)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:20:42 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1824)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.8ms | Allocations: 19123)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:20:48 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1571)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 1.0ms | Allocations: 18723)
+
+
+Started GET "/blogs" for ::1 at 2019-10-17 13:20:50 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1571)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.8ms | Allocations: 18722)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:20:50 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 87)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.3ms | Allocations: 17650)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:20:51 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.4ms | Allocations: 761)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 859)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 18037)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:20:52 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1269)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 17098)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:20:52 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.4ms | Allocations: 16604)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:21:51 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms | Allocations: 18249)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:22:15 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 18250)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:22:23 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 18256)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:22:34 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms | Allocations: 3772)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:22:34 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 15863)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:22:37 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 15818)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:23:41 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 188)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 17558)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:24:08 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 180)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 17551)
+
+
+Started POST "/homes/guest_sign_in" for ::1 at 2019-10-17 13:24:11 +0900
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"PpIBs82KC4P8JBCGiFmUiu1iPrBfP8M0u52I/EtdIVPdq9kED6+/+5gfge7wT9WhJT8IbnxyiDqzDzjAAqUT5w=="}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:3:in `guest_sign_in'
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms | Allocations: 1236)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:24:11 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.3ms | Allocations: 1077)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1443)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.3ms | Allocations: 19594)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:24:29 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms | Allocations: 2418)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:24:29 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 15919)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:24:52 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 185)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 17559)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:25:19 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 209.1ms | Allocations: 119417)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms | Allocations: 121133)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007ffbbe8ab6c0>:0x00007ffbbe8a9c30>):
+    2:   <h1>Golftalk</h1>
+    3:   <p>ゴルフ好きだけのSNSアプリです。ゴルフに関することを投稿しましょう。</p>
+    4:     <%= link_to '簡単ログイン', homes_guest_sign_in_path, class: "btn btn-info btn-lg w-50y", method: :post %>
+    5:     <%= f.submit  t('.sign_in'), class: 'btn btn-info btn-lg w-50' %>
+    6:     <a href ="/users/auth/facebook">
+    7:       <button type="button" name="button" class="btn btn-info btn-lg w-50y">Facebookログイン</button>
+    8:     </a>
+  
+app/views/users/index.html.erb:5
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:25:51 +0900
+Processing by BlogsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:25:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 483)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2938)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 21951)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:25:53 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 184.4ms | Allocations: 119432)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms | Allocations: 120964)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007ffbbcc33038>:0x00007ffbbcc316e8>):
+    3:   <p>ゴルフ好きだけのSNSアプリです。ゴルフに関することを投稿しましょう。</p>
+    4:     <%= link_to '簡単ログイン', homes_guest_sign_in_path, class: "btn btn-info btn-lg w-50y", method: :post %>
+    5:     <div class="form-group">
+    6:       <%= f.submit  t('.sign_in'), class: 'btn btn-info btn-lg w-50' %>
+    7:     </div>
+    8:     <a href ="/users/auth/facebook">
+    9:       <button type="button" name="button" class="btn btn-info btn-lg w-50y">Facebookログイン</button>
+  
+app/views/users/index.html.erb:6
+Started GET "/" for ::1 at 2019-10-17 13:26:08 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 186)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 17575)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:26:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 425)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1951)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 20341)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:26:18 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 15896)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:26:58 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 100)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1071)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 17168)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:27:28 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 228)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 17610)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:27:30 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 425)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1948)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 20338)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:28:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 217)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2482)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 20164)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:28:13 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 100)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1077)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 17178)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:28:14 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1409)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 17455)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:28:54 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1405)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 17448)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:29:48 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2169)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 21065)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-17 13:29:52 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-17 13:29:52 +0900
+Started GET "/users/auth/facebook/callback?code=AQBa-iSdYaY7e2tgOix4HtMqNhLELJxqSfEJ6MnFjnYPjqmri04Mo-zpkd-a7FslR78tSuMmzNJJbOK0xQeiImEWQmMei2c47D4Kr61dszvr1q1U1-CbUXZmQKXOH53-feIiA4UYZIiw3-VUVZ2G3_2oKqLFADaub6_rH2kVgyMKrDVswvCOyIMLNS2lqfecsDPHx5WQPXqCGwCjvMlEqmkMshR3H7jKw1Pf7nyggOAc-cuhZ3-kQZMfDmGEVVcHF-cCZkEoCHcVzsqCaWjFEShcu544M_PEgIcNU9i3igjyvBFHw_6e6moEAJdXTemSxBbo_K61M7j-n0AohiSzljLbYe4QzYpT1U3LkQgb-VgbQsHRaO5uGZ1VaLLyywWFHEc&state=cacfeb3f004587c3ef1b3aa6731368f8110eecb04f4d35c4" for ::1 at 2019-10-17 13:29:53 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBa-iSdYaY7e2tgOix4HtMqNhLELJxqSfEJ6MnFjnYPjqmri04Mo-zpkd-a7FslR78tSuMmzNJJbOK0xQeiImEWQmMei2c47D4Kr61dszvr1q1U1-CbUXZmQKXOH53-feIiA4UYZIiw3-VUVZ2G3_2oKqLFADaub6_rH2kVgyMKrDVswvCOyIMLNS2lqfecsDPHx5WQPXqCGwCjvMlEqmkMshR3H7jKw1Pf7nyggOAc-cuhZ3-kQZMfDmGEVVcHF-cCZkEoCHcVzsqCaWjFEShcu544M_PEgIcNU9i3igjyvBFHw_6e6moEAJdXTemSxBbo_K61M7j-n0AohiSzljLbYe4QzYpT1U3LkQgb-VgbQsHRaO5uGZ1VaLLyywWFHEc", "state"=>"cacfeb3f004587c3ef1b3aa6731368f8110eecb04f4d35c4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/show
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1180)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:29:54 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1098)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 17771)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:29:54 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:29:57 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2376)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:29:57 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 225)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 16204)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:29:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-17 13:29:58 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 15899)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:29:59 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 425)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1944)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 19621)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:30:00 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1412)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 17461)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:30:01 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 15911)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:30:30 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 222)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 17597)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:31:46 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 226)
+Completed 200 OK in 1229ms (Views: 1227.5ms | ActiveRecord: 0.0ms | Allocations: 1373666)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:32:27 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+Completed 200 OK in 1378ms (Views: 1376.7ms | ActiveRecord: 0.0ms | Allocations: 1371919)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:33:31 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 238)
+Completed 200 OK in 1297ms (Views: 1295.8ms | ActiveRecord: 0.0ms | Allocations: 1373244)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:33:42 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 88)
+Completed 200 OK in 1292ms (Views: 1290.9ms | ActiveRecord: 0.0ms | Allocations: 1371501)
+
+
+Started POST "/homes/guest_sign_in" for ::1 at 2019-10-17 13:33:47 +0900
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"3zJWTg/DI6CPsTgFC+gJOsVkq7N8Km6hPZau86qdR2iUJX/MdogsWwNsXC63bbA/JxHa9YFFtdbYbtrYgG/IlQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:3:in `guest_sign_in'
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1216)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:33:47 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1076)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1444)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 19653)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:33:49 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2420)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:33:49 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 15931)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:33:49 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 211)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2181)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 20497)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:33:51 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 15904)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:34:10 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1410)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 17448)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:34:11 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 425)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1949)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 19629)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:34:12 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 15909)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:34:14 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1412)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 17453)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-17 13:34:16 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 100)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1075)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 17174)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-17 13:34:18 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"6U4eB+LbysofzoGsk+buvt+Y51P4Z83A0Gomlweax4ZvI+7i6dIL7P7fj/gejnYKIXVQqnzrG7XHFIUYeNvMew==", "user"=>{"email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'abeshinnosuke1006@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 129ms (ActiveRecord: 0.6ms | Allocations: 14909)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:34:18 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1275)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 17124)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-17 13:34:19 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3033)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.4ms | Allocations: 21011)
+
+
+Started PUT "/users" for ::1 at 2019-10-17 13:34:37 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"dKjAI5RLfxiIUTDirNTQUAI5/37PKEkxJQTdAKUhtyuU1ELy6z+omcIr7pASZs0S7xDTL2Gztm2QheGgWCLorQ==", "user"=>{"name"=>"阿部慎之助", "email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ffbc58ab100 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191017-5655-1li216q.png>, @original_filename="スクリーンショット 2019-10-12 16.24.38.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-12 16.24.38.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 234)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2571)
+Completed 200 OK in 126ms (Views: 15.0ms | ActiveRecord: 0.7ms | Allocations: 25314)
+
+
+Started PUT "/users" for ::1 at 2019-10-17 13:34:42 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"qhKWKygoFHMAlH1O8LnO+Xi4X2fk2s/546N4tvl7I+OSxmeZLiAXbuiBG4joP4l4s4Jrd8zKXV9tnHETQkxV/Q==", "user"=>{"name"=>"阿部慎之助", "email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"更新"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+[31mUnpermitted parameter: :name[0m
+[31mUnpermitted parameter: :name[0m
+[31mUnpermitted parameter: :name[0m
+[31mUnpermitted parameter: :name[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms (ActiveRecord: 1.0ms | Allocations: 4973)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:34:42 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms | Allocations: 16714)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:34:44 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1135)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 16827)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:35:36 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2415)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:35:36 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 15915)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:35:39 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1404)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 17447)
+
+
+Started POST "/users" for ::1 at 2019-10-17 13:36:12 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Sq8hSFlAgM+q97md05h3rPKOYHMjZ869pOmFgwc1DhNbzjpSiX5sYAqhBogrkj/MjT+1AzcbbaJs+bbNwXYpRg==", "user"=>{"name"=>"大谷翔平", "email"=>"ohtani@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ffbc2628408 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191017-5655-g6oi5a.jpg>, @original_filename="golf-clubs-1633748_640 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"golf-clubs-1633748_640 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"アカウント登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ohtani@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `name`, `image`) VALUES ('ohtani@gmail.com', '$2a$11$FWmQzi74lHNHdH.EpDC.NefiSzse1lwglt1K/vKfRt4YKCLH6oIVC', '2019-10-17 04:36:12.260120', '2019-10-17 04:36:12.260120', '大谷翔平', 'golf-clubs-1633748_640__2_.jpg')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 119ms (ActiveRecord: 3.0ms | Allocations: 9515)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:36:12 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 998)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 16706)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:36:47 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 996)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 16679)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-17 13:36:48 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.5ms | Allocations: 762)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 860)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 18033)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:36:49 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 996)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.4ms | Allocations: 16684)
+
+
+Started GET "/users/edit" for ::1 at 2019-10-17 13:49:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2402)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.7ms | Allocations: 19581)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-17 13:52:58 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms | Allocations: 2422)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:52:58 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 15922)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 13:53:01 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1404)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 17449)
+
+
+Started POST "/users" for ::1 at 2019-10-17 13:53:24 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"ldOPLKTEhCmxg4DEzH+KXfORMEWuA9uB6+wHQhvjsf8NhfBwjRVqZ0VFNsvPWA/Y33/GExnIgrnwJ/rwVbeA1w==", "user"=>{"name"=>"前田祐二", "email"=>"maeda@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウント登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'maeda@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `name`) VALUES ('maeda@gmail.com', '$2a$11$FAlUX6Jr3vQX76JdQMP.eOex78x.FtUZK7aTA5Wy0c.3AJyS9EhES', '2019-10-17 04:53:25.066933', '2019-10-17 04:53:25.066933', '前田祐二')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/show
+Completed 302 Found in 115ms (ActiveRecord: 2.0ms | Allocations: 7309)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:53:25 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 954)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 16655)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:53:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-17 13:53:31 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2395)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 19573)
+
+
+Started GET "/users/class" for ::1 at 2019-10-17 13:53:31 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/users" for ::1 at 2019-10-17 13:53:45 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"authenticity_token"=>"3HlbRfAPuqVJ+xs+kKT9k+HJ1YNUdqoT4ZXF4X2xkXg/jp2nymK4Tv35I3PjnEnV6Qp1RM8fVO9vEvTeKRNxQw==", "user"=>{"name"=>"前田祐二", "email"=>"maeda@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ffbc7059e28 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191017-5655-1luljv5.png>, @original_filename="スクリーンショット 2019-09-23 13.03.56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-09-23 13.03.56.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"更新"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 LIMIT 1[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+[31mUnpermitted parameters: :name, :image[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms (ActiveRecord: 0.7ms | Allocations: 4873)
+
+
+Started GET "/" for ::1 at 2019-10-17 13:53:45 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.4ms | Allocations: 16700)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:53:47 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 955)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.6ms | Allocations: 16643)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:53:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-17 13:53:47 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 954)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.4ms | Allocations: 16652)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:53:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-17 13:57:00 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2407)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.3ms | Allocations: 19589)
+
+
+Started GET "/users/class" for ::1 at 2019-10-17 13:57:00 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-17 13:57:31 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 10.5ms | Allocations: 11537)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/application_controller.rb:7:in `configure_permitted_parameters'
+Started GET "/users/edit" for ::1 at 2019-10-17 13:57:40 +0900
+  
+SyntaxError (/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/controllers/application_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...itizer.permit(:sign_up, :/users/edit, keys: [:name, :image])
+...                          ^~~~~
+/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/controllers/application_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+....permit(:sign_up, :/users/edit, keys: [:name, :image])
+...                              ^
+/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/controllers/application_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+...rs/edit, keys: [:name, :image])
+...                              ^
+/Users/shibuyadaisuke/Documents/GitHub/golftalk/app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/application_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/application_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/application_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+app/controllers/application_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/edit" for ::1 at 2019-10-17 13:57:48 +0900
+Started GET "/" for ::1 at 2019-10-17 13:57:54 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#index as HTML
+Processing by Devise::RegistrationsController#edit as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2427)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 0.6ms | Allocations: 36910)
+
+
+Completed 200 OK in 66ms (Views: 35.9ms | ActiveRecord: 14.0ms | Allocations: 45884)
+
+
+Started GET "/show" for ::1 at 2019-10-17 13:57:55 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 959)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.4ms | Allocations: 16654)
+
+
+Started GET "/class" for ::1 at 2019-10-17 13:57:55 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2019-10-17 13:57:56 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2401)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 19590)
+
+
+Started GET "/users/class" for ::1 at 2019-10-17 13:57:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users/class"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2019-10-17 14:00:14 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 17 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2710)
+
+
+Started GET "/" for ::1 at 2019-10-17 14:00:14 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 15926)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-10-17 14:00:15 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1404)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 17445)
+
+
