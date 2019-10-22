@@ -15,16 +15,16 @@
     <%= form.text_field :title %>
   </div>
 
+  <div class="image-upload">
+    <%= form.label :image %>
+    <%= form.file_field :image, autocomplete: 'image'%>
+  </div>
+
   <div class="field">
     <%= form.label :content %><br>
     <%= form.text_area :content %>
   </div>
 
-
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image, autocomplete: 'image'%>
-  </div>
 
   <div class="actions">
     <%= form.submit class: "btn btn-info"%>

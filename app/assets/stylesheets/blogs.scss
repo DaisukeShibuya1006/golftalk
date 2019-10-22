@@ -10,23 +10,45 @@
 .content {
   margin-bottom: 100px;
 }
+.container {
+  max-width: 600px;
+}
+
+
 
 .blog-form {
   margin-left: auto;
 }
 
 input[type="text"] {
-        width: 300px;
+        width: 500px;
         height: 40px;
 }
-//
-// input[type="text_area"] {
-//         width: 300px;
-//         height: 40px;
-// }
+
 
 div.field textarea { width: 500px; height: 150px; }
 
+
+
 .w-100px {
   width: 100px !important;
+}
+
+.image-upload {
+  display:inline-block;
+}
+
+// 770px以下のレスポンシブ
+
+@media screen and (max-width:770) {
+}
+@media screen and (max-width:767px) {
+  div.field textarea { width: 280px; height: 150px; }
+  input[type="text"] {
+          width: 280px;
+          height: 40px;
+  }
+   .container {
+    width: 500px;
+  }
 }
