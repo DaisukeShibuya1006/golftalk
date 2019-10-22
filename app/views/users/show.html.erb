@@ -1,8 +1,10 @@
-<h1>ユーザー情報</h1>
-<%=current_user.name %><br />
-<%=current_user.email %><br />
-<img src=<%= current_user.image %> class = "icon_image">
+<div class="container">
+  <h1>ユーザー情報</h1>
+  <%=current_user.name %><br />
+  <%=current_user.email %><br />
+  <img src=<%= current_user.image %> class = "icon_image">
 
-<a href="/users/edit">
-  <button type="button">編集</button>
-</a>
+  <a href="/users/edit">
+     <button type="button">編集</button>
+  </a>
+</div>
