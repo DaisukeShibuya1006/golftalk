@@ -38827,3 +38827,2412 @@ Processing by BlogsController#new as HTML
 Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.6ms | Allocations: 18037)
 
 
+  [1m[35m (16.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5386780664013430290', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('5386780664013430290')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (14.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('5386780664013430290', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('5386780664013430290')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (3.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5386780664013430290', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddImageToBlogs (20191022053053)
+  [1m[35m (16.3ms)[0m  [1m[35mALTER TABLE `blogs` ADD `image` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191022053053')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('5386780664013430290')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:36:46 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 195.4ms | Allocations: 120356)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 196.9ms | Allocations: 120698)
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 0.5ms | Allocations: 138655)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8cb61bcc50>:0x00007f8cb61b6b20>):
+    20:     <%= form.text_area :content %>
+    21:   </div>
+    22: 
+    23:   <%= f.label :画像 %><br />
+    24:   <%= f.file_field :img, class: "image" %>
+    25: 
+    26:   <div class="actions">
+  
+app/views/blogs/_form.html.erb:23
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:3
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:38:57 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 153.5ms | Allocations: 120554)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 154.1ms | Allocations: 120896)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.4ms | Allocations: 124097)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8cb6308b40>:0x00007f8cb6313158>):
+    26:   </div>
+    27: 
+    28: 
+    29:   <%= f.label :image %><br />
+    30:   <%= f.file_field :img, class: "image" %>
+    31: 
+    32:   <div class="actions">
+  
+app/views/blogs/_form.html.erb:29
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:3
+Started GET "/" for ::1 at 2019-10-22 14:40:54 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 230)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms | Allocations: 18415)
+
+
+Started GET "/" for ::1 at 2019-10-22 14:40:54 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 88)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 16690)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:40:55 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1277)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.4ms | Allocations: 17117)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:40:55 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.6ms | Allocations: 1574)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1938)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.5ms | Allocations: 20078)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:40:56 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.6ms | Allocations: 1160)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1257)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 18431)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:41:17 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 1319)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1679)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.6ms | Allocations: 20409)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:41:48 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.7ms | Allocations: 1323)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1683)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.6ms | Allocations: 20413)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:41:49 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 967)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1065)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 18243)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:43:18 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1269)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.5ms | Allocations: 18535)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:43:30 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"tLrxOVs+AjfeTBpj1T+Fvp4N1TGzvI+Twlu/OdTyBiHBYf9o8VRmodiD8CTfi4NjPz7jt0pbIPvKFjyoYJFqtQ==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8cb60aa7b8 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-32100-rj7kk7.jpg>, @original_filename="golf-clubs-1633748_640 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"golf-clubs-1633748_640 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 2771)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `image`):
+  
+app/controllers/blogs_controller.rb:25:in `block in create'
+app/controllers/blogs_controller.rb:24:in `create'
+Started POST "/blogs" for ::1 at 2019-10-22 14:44:04 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"tLrxOVs+AjfeTBpj1T+Fvp4N1TGzvI+Twlu/OdTyBiHBYf9o8VRmodiD8CTfi4NjPz7jt0pbIPvKFjyoYJFqtQ==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b6ad2f3f0 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-1grh3ek.jpg>, @original_filename="golf-clubs-1633748_640 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"golf-clubs-1633748_640 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 05:44:04.985460', '2019-10-22 05:44:04.985460', 15)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/23
+Completed 302 Found in 53ms (ActiveRecord: 19.1ms | Allocations: 22568)
+
+
+Started GET "/blogs/23" for ::1 at 2019-10-22 14:44:04 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 23 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2053)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms | Allocations: 10033)
+
+
+  
+ActionView::Template::Error (undefined method `img' for nil:NilClass):
+     6: 
+     7: <p>
+     8:   <strong>Image</strong>
+     9:   <%= image_tag @post.img.url　if @post.img? %>
+    10: </p>
+    11: 
+    12: <p>
+  
+app/views/blogs/show.html.erb:9
+Started GET "/blogs/23" for ::1 at 2019-10-22 14:44:22 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 23 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1089)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 4933)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     6: 
+     7: <p>
+     8:   <strong>Image</strong>
+     9:   <%= image_tag @post.image.url　if @post.image? %>
+    10: </p>
+    11: 
+    12: <p>
+  
+app/views/blogs/show.html.erb:9
+Started GET "/show" for ::1 at 2019-10-22 14:45:41 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1311)
+Completed 200 OK in 1188ms (Views: 1186.6ms | ActiveRecord: 0.3ms | Allocations: 1565684)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:45:43 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1134)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 16825)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:45:43 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 66.1ms | Allocations: 49298)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 67.3ms | Allocations: 49672)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.5ms | Allocations: 67024)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:45:59 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"KfUnZLo6KKb3bpF4YNhT3DKJ8IGoAdtctsWDdmNPk6UH87fj6gQAVhnKXuC5hU82CCHhfS3dTHDpoVUnhibOmQ==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b742a8530 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-1h13mn3.png>, @original_filename="スクリーンショット 2019-10-02 20 (3).50.24.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-02 20 (3).50.24.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 05:45:59.550190', '2019-10-22 05:45:59.550190', 15)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/24
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms | Allocations: 4460)
+
+
+Started GET "/blogs/24" for ::1 at 2019-10-22 14:45:59 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 24 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 906)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 3521)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     6: 
+     7: <p>
+     8:   <strong>Image</strong>
+     9:   <%= image_tag @post.image.url　if @post.image? %>
+    10: </p>
+    11: 
+    12: <p>
+  
+app/views/blogs/show.html.erb:9
+Started POST "/blogs" for ::1 at 2019-10-22 14:46:48 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"bl1CFoKVF73AgjKhr1paKkTNeTleSSlxOqvZF0HCEZQbhkxHKP9zK8ZN2Oal7lz35f5Pv6euhhky5lqG9aF9AA==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b740ba660 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-4c5hdu.jpg>, @original_filename="golf-clubs-1633748_640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"golf-clubs-1633748_640.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 05:46:48.263020', '2019-10-22 05:46:48.263020', 15)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/25
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms | Allocations: 4424)
+
+
+Started GET "/blogs/25" for ::1 at 2019-10-22 14:46:48 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 25 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2065)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 5837)
+
+
+Started GET "/blogs/25" for ::1 at 2019-10-22 14:46:50 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 25 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1875)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms | Allocations: 4494)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:46:54 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1269)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 18348)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:46:55 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1150)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.4ms | Allocations: 16848)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:46:55 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1133)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 1.8ms | Allocations: 16830)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:46:56 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.6ms | Allocations: 1322)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1686)
+Completed 200 OK in 28ms (Views: 20.2ms | ActiveRecord: 2.5ms | Allocations: 19006)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:47:06 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"AHV1FKoussR4L4jj+LXd/FCpAxy0WQYPBAtaNpEeq2cuc+WT+hCaNJaLR3sh6MEWagES4DGFkSNbb4xndHf2Ww==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b74410648 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-a0z5jx.png>, @original_filename="スクリーンショット 2019-09-23 13.03.56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-09-23 13.03.56.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 05:47:06.590775', '2019-10-22 05:47:06.590775', 15)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/26
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms | Allocations: 4420)
+
+
+Started GET "/blogs/26" for ::1 at 2019-10-22 14:47:06 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 26 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1875)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 4484)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:50:27 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"FrSLc0JWSfP529cLLCvInbNPkci3rND6JI5SZ8iRgbhjb4Ui6DwtZf8UPUwmn85AEnynTk5Lf5Isw9H2fPLtLA==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "img"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b73437370 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-1kb0ym5.png>, @original_filename="スクリーンショット 2019-09-23 13.03.56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[img]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-09-23 13.03.56.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[31mUnpermitted parameter: :img[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.2ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 05:50:27.298345', '2019-10-22 05:50:27.298345', 15)[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/27
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 4411)
+
+
+Started GET "/blogs/27" for ::1 at 2019-10-22 14:50:27 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 27 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2059)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 5825)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:50:29 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.2ms | Allocations: 1321)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1681)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.4ms | Allocations: 19427)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:50:29 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.3ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1064)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 18241)
+
+
+Started GET "/show" for ::1 at 2019-10-22 14:50:30 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1270)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 17923)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 14:50:31 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 969)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1067)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.4ms | Allocations: 18248)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:50:44 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"LmRooZSa0KgKb4p33bld0WeA7v1WV3pfMuPDoBddbXgAYvgmxKT4WOTLRe8E5EE7XSj/AdOL7XNthxXx8jQwRA==", "blog"=>{"title"=>"ゴルフしたい", "content"=>"ゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたい", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b745b8540 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-hivzaq.png>, @original_filename="スクリーンショット 2019-10-14 17.01.10-side.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-14 17.01.10-side.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.7ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('ゴルフしたい', 'ゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたい', '2019-10-22 05:50:44.519065', '2019-10-22 05:50:44.519065', 15, 'スクリーンショット_2019-10-14_17.01.10-side.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/28
+Completed 302 Found in 17ms (ActiveRecord: 1.8ms | Allocations: 8041)
+
+
+Started GET "/blogs/28" for ::1 at 2019-10-22 14:50:44 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1924)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms | Allocations: 4533)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 14:50:55 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2153)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.7ms | Allocations: 19468)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 14:56:02 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"cdzSUHMB2fNMLIf8jzJXlsAmeN93kqGuWnyL8YXml3gEB9wB2Wu9ZUrjbbuFhlFLYRVOWY51DsZSMQhgMYX77A==", "blog"=>{"title"=>"ゴルフしたい", "content"=>"ゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたい", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b741293d0 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-9u8k53.png>, @original_filename="スクリーンショット 2019-10-14 17.01.10-side.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-14 17.01.10-side.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.5ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('ゴルフしたい', 'ゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたいゴルフしたい', '2019-10-22 05:56:02.959037', '2019-10-22 05:56:02.959037', 15, 'スクリーンショット_2019-10-14_17.01.10-side.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/29
+Completed 302 Found in 15ms (ActiveRecord: 2.1ms | Allocations: 5194)
+
+
+Started GET "/blogs/29" for ::1 at 2019-10-22 14:56:02 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1924)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms | Allocations: 4537)
+
+
+Started GET "/blogs/29" for ::1 at 2019-10-22 14:56:04 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1924)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 4535)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:20 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 1352)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1714)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.4ms | Allocations: 20473)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:22 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1064)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 18241)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:23 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.4ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1058)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.5ms | Allocations: 18233)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:25 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.5ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1058)
+Completed 200 OK in 34ms (Views: 26.9ms | ActiveRecord: 1.3ms | Allocations: 18236)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:25 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1058)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.6ms | Allocations: 18234)
+
+
+Started GET "/show" for ::1 at 2019-10-22 15:05:26 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1273)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.7ms | Allocations: 17935)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:05:26 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.6ms | Allocations: 969)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1067)
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 0.6ms | Allocations: 18253)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:06:03 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 177.3ms | Allocations: 120592)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 178.0ms | Allocations: 120935)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.3ms | Allocations: 124132)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8b7291ef60>:0x00007f8b7291d430>):
+    25:     <%= form.file_field :image, class: "image" %>
+    26:   </div>
+    27: 
+    28:   <%= f.label :Image %><br />
+    29:   <%= f.file_field :image, class: "image" %>
+    30: 
+    31:   <div class="actions">
+  
+app/views/blogs/_form.html.erb:28
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:3
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:06:48 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 160.1ms | Allocations: 120569)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 160.9ms | Allocations: 120911)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.4ms | Allocations: 124107)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8b74091580>:0x00007f8b7408bba8>):
+    26:   </div>
+    27:   
+    28:   <div class="field">
+    29:   <%= f.label :Image %><br />
+    30:   <%= f.file_field :image, class: "image" %>
+    31:   </div>
+    32: 
+  
+app/views/blogs/_form.html.erb:29
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:3
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:07:43 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.0ms | Allocations: 1322)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1683)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 20422)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:08:30 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"0Rgxfz90Mvka6cFlfHhJA22AMaXy1XJxocy7/tMHhe+kwz8ulR5WbxwmKyJ2zE/ezLMHIwsy3RmpgThvZ2Tpew==", "blog"=>{"title"=>"ゴルフ番組面白いよね", "content"=>"ゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよね", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b740b9260 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-19xtfmk.png>, @original_filename="スクリーンショット 2019-10-21 15.37.54-side.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-21 15.37.54-side.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.5ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('ゴルフ番組面白いよね', 'ゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよね', '2019-10-22 06:08:30.277045', '2019-10-22 06:08:30.277045', 15, 'スクリーンショット_2019-10-21_15.37.54-side.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/30
+Completed 302 Found in 14ms (ActiveRecord: 1.8ms | Allocations: 5199)
+
+
+Started GET "/blogs/30" for ::1 at 2019-10-22 15:08:30 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2108)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms | Allocations: 4861)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:11:28 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"0Rgxfz90Mvka6cFlfHhJA22AMaXy1XJxocy7/tMHhe+kwz8ulR5WbxwmKyJ2zE/ezLMHIwsy3RmpgThvZ2Tpew==", "blog"=>{"title"=>"ゴルフ番組面白いよね", "content"=>"ゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよね", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b733b7990 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-ahm1mz.png>, @original_filename="スクリーンショット 2019-10-21 15.37.54-side.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-21 15.37.54-side.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.4ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('ゴルフ番組面白いよね', 'ゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよねゴルフ番組面白いよね', '2019-10-22 06:11:28.349663', '2019-10-22 06:11:28.349663', 15, 'スクリーンショット_2019-10-21_15.37.54-side.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/31
+Completed 302 Found in 15ms (ActiveRecord: 2.2ms | Allocations: 5207)
+
+
+Started GET "/blogs/31" for ::1 at 2019-10-22 15:11:28 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 31 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2154)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms | Allocations: 5913)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:11:32 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.3ms | Allocations: 1322)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1682)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 19424)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:11:32 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2483)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.7ms | Allocations: 19783)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:15:28 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2475)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.9ms | Allocations: 21198)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:15:31 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 157.1ms | Allocations: 120359)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 158.1ms | Allocations: 120702)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.4ms | Allocations: 122895)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8b72a248b0>:0x00007f8b742ebb50>):
+    22: 
+    23: 
+    24:   <div class="field">
+    25:     <%= f.label :image %>
+    26:     <%= f.file_field :image, autocomplete: 'image', class: 'form-control' %>
+    27:   </div>
+    28: 
+  
+app/views/blogs/_form.html.erb:25
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:3
+Started GET "/blogs" for ::1 at 2019-10-22 15:16:57 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2472)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.7ms | Allocations: 21200)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:16:59 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.6ms | Allocations: 1331)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1692)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.4ms | Allocations: 19017)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:17:16 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"7FH2p3LlnCMgBw4emrOSE+ponBxIt45BqtUygkKVU9zCV2YgItu0086jwYZD7o750MCN4M1rGW31seTTp/wO4A==", "blog"=>{"title"=>"今日はOOカントリーでゴルフ", "content"=>"今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b70766648 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-1epw3c2.png>, @original_filename="スクリーンショット 2019-10-15 20.03.44.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-15 20.03.44.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('今日はOOカントリーでゴルフ', '今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ今日はOOカントリーでゴルフ', '2019-10-22 06:17:16.850425', '2019-10-22 06:17:16.850425', 15, 'スクリーンショット_2019-10-15_20.03.44.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/32
+Completed 302 Found in 17ms (ActiveRecord: 1.5ms | Allocations: 5211)
+
+
+Started GET "/blogs/32" for ::1 at 2019-10-22 15:17:16 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2110)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.0ms | Allocations: 4868)
+
+
+Started GET "/blogs/32" for ::1 at 2019-10-22 15:21:56 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 547)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.7ms | Allocations: 19857)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:22:09 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.4ms | Allocations: 1332)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1696)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.4ms | Allocations: 19021)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:22:20 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"i5jvPaBKXmCruKpaL+mhx3KWHbStJd7eY4JqsSUk0Kalnn+68HR2kEUcZcL2tL0tSD4MSCj5SfI85rzgwE2Nmg==", "blog"=>{"title"=>"Hello world!!!", "content"=>"Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b72a274e8 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-4ueul6.jpg>, @original_filename="golf-clubs-1633748_640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"golf-clubs-1633748_640.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('Hello world!!!', 'Hello world!!!Hello world!!!Hello world!!!Hello world!!!Hello world!!!', '2019-10-22 06:22:20.756191', '2019-10-22 06:22:20.756191', 15, 'golf-clubs-1633748_640.jpg')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/33
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms | Allocations: 5270)
+
+
+Started GET "/blogs/33" for ::1 at 2019-10-22 15:22:20 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 33 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 185)
+Completed 200 OK in 35ms (Views: 28.5ms | ActiveRecord: 0.9ms | Allocations: 17933)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:22:32 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2698)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.8ms | Allocations: 20003)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:22:40 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 971)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1068)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.5ms | Allocations: 18240)
+
+
+Started GET "/show" for ::1 at 2019-10-22 15:22:41 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1271)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 17922)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:22:42 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2450)
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 2.1ms | Allocations: 19609)
+
+
+Started GET "/blogs/33/edit" for ::1 at 2019-10-22 15:23:35 +0900
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 33 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1036)
+  Rendered blogs/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1309)
+Completed 200 OK in 29ms (Views: 15.9ms | ActiveRecord: 1.0ms | Allocations: 19179)
+
+
+Started GET "/blogs/32/edit" for ::1 at 2019-10-22 15:23:39 +0900
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.6ms | Allocations: 1008)
+  Rendered blogs/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1135)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 1.1ms | Allocations: 18862)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:24:46 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4359)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 1.0ms | Allocations: 23082)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:26:04 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2121)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms | Allocations: 5313)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:       <%= blog.image %>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:26:38 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2119)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 5310)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     6:     <h3>タイトル</h3>
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <% if @blog.image? %>
+    10:   <div class="image">
+    11:       <%= blog.image %>
+    12:   </div>
+  
+app/views/blogs/index.html.erb:9
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:26:48 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 4359)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.6ms | Allocations: 23083)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:27:49 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4092)
+Completed 200 OK in 1362ms (Views: 1358.0ms | ActiveRecord: 0.8ms | Allocations: 1373830)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:28:41 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4085)
+Completed 200 OK in 1356ms (Views: 1352.2ms | ActiveRecord: 0.7ms | Allocations: 1374537)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:29:36 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4366)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.8ms | Allocations: 23630)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:29:40 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 1325)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1686)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.4ms | Allocations: 19009)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:30:14 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"1OXDTe/dmo3+iaJPBk7BkPqsULpu0b4oV5EoXY7IoUT641PKv+OyfRAtbdffE916wARBRusNKQQI9f4Ma6H8eA==", "blog"=>{"title"=>"明日はZOZOチャンピオンシップを見にいきます", "content"=>"タイガーウッズのプレイが見れるのは最高。", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b733de9f0 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-1rj2jth.png>, @original_filename="スクリーンショット 2019-09-23 13.03.56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-09-23 13.03.56.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.3ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('明日はZOZOチャンピオンシップを見にいきます', 'タイガーウッズのプレイが見れるのは最高。', '2019-10-22 06:30:14.349517', '2019-10-22 06:30:14.349517', 15, 'スクリーンショット_2019-09-23_13.03.56.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/34
+Completed 302 Found in 16ms (ActiveRecord: 2.2ms | Allocations: 5215)
+
+
+Started GET "/blogs/34" for ::1 at 2019-10-22 15:30:14 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 34 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 541)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.6ms | Allocations: 18431)
+
+
+Started GET "/blogs/34" for ::1 at 2019-10-22 15:31:16 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 34 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 540)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 1.1ms | Allocations: 19831)
+
+
+Started GET "/blogs/34" for ::1 at 2019-10-22 15:31:47 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 34 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 543)
+Completed 200 OK in 1385ms (Views: 1379.4ms | ActiveRecord: 0.7ms | Allocations: 1372695)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:32:18 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.7ms | Allocations: 1324)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1692)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.4ms | Allocations: 19057)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:32:18 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1058)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.4ms | Allocations: 18230)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:32:19 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2126)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms | Allocations: 4304)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:     <%= image_tag @blog.image.url%>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:34:11 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 1324)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1688)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.3ms | Allocations: 20434)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:34:13 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.1ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1064)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 18240)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 15:34:29 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"YFfxnJCtzkvUoPfpRtH8BwX4Dy9iZG68M6eopoogNgpOUWEbwJPmuzoEOHGfjODtP1Ae0+e4+ZBsw373b0lrNg==", "blog"=>{"title"=>"今日は晴れです！", "content"=>"今日は晴れです！今日は晴れです！今日は晴れです！", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b709332f0 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-vyca9c.png>, @original_filename="スクリーンショット 2019-10-02 20 (5).50.24のコピー.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-10-02 20 (5).50.24\xE3\x81\xAE\xE3\x82\xB3\xE3\x83\x92\xE3\x82\x9A\xE3\x83\xBC.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.4ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('今日は晴れです！', '今日は晴れです！今日は晴れです！今日は晴れです！', '2019-10-22 06:34:29.814155', '2019-10-22 06:34:29.814155', 15, 'スクリーンショット_2019-10-02_20__5_.50.24のコピー.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/35
+Completed 302 Found in 12ms (ActiveRecord: 1.7ms | Allocations: 5211)
+
+
+Started GET "/blogs/35" for ::1 at 2019-10-22 15:34:29 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 620)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.6ms | Allocations: 18512)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:34:35 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2138)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 4318)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:     <%= image_tag @blog.image.url%>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:35:42 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2105)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms | Allocations: 5298)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <%= image_tag @blog.image.url%>
+    11:   </div>
+    12:   <div class="content">
+    13:     <h3>内容</h3>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:35:45 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1324)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1685)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 19417)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:35:47 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.8ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1064)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.4ms | Allocations: 18247)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:35:47 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1838)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms | Allocations: 3877)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <%= image_tag @blog.image.url%>
+    11:   </div>
+    12:   <div class="content">
+    13:     <h3>内容</h3>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:35:59 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 1324)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1685)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.3ms | Allocations: 20432)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 15:36:00 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.4ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1064)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 18233)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:36:00 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2138)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms | Allocations: 4306)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:     <%= image_tag @blog.image.url%>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:38:00 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2138)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms | Allocations: 5321)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:     <%= image_tag @blog.image %>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:38:13 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2138)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms | Allocations: 6127)
+
+
+  
+ActionView::Template::Error (undefined method `image?' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <% if @blog.image? %>
+    11:     <%= blog.image %>
+    12:     <% end %>
+    13:   </div>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:38:21 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 5075)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.6ms | Allocations: 23792)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:39:21 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2104)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 5287)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     7:     <%= blog.title %>
+     8:   </div>
+     9:   <div class="image">
+    10:     <%= @blog.image_url.to_s %>
+    11:   </div>
+    12:   <div class="content">
+    13:     <h3>内容</h3>
+  
+app/views/blogs/index.html.erb:10
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:39:28 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 5072)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.7ms | Allocations: 23796)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-22 15:39:29 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 3760)
+
+
+Started GET "/" for ::1 at 2019-10-22 15:39:29 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 237)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 17050)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:40:35 +0900
+Processing by BlogsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-22 15:40:35 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 484)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2940)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 21967)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-10-22 15:40:41 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Z3+WGWeYF0M5V70hP+gXpmHeDjGY6ae2gE2xhxSZcSsv3OAM/SVTPk5FvDvZhLpSdm3t8Xfcmo6EPdcOTqB3pQ==", "user"=>{"email"=>"abeshinnosuke1006@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'abeshinnosuke1006@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 117ms (ActiveRecord: 0.8ms | Allocations: 6947)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:40:41 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2152)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms | Allocations: 5162)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     9:   <div class="image">
+    10:     <%= blog.image %>
+    11:   </div>
+    12:   <%= image_tag @blog.image_url.to_s if @blog.image_url.present? %>
+    13:   <div class="content">
+    14:     <h3>内容</h3>
+    15:     <%= blog.content %><br>
+  
+app/views/blogs/index.html.erb:12
+app/views/blogs/index.html.erb:4
+Started GET "/blogs" for ::1 at 2019-10-22 15:40:56 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 4273)
+Completed 200 OK in 31ms (Views: 20.5ms | ActiveRecord: 0.8ms | Allocations: 23018)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 15:43:05 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 4270)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.5ms | Allocations: 22995)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:01:27 +0900
+  
+LoadError (cannot load such file -- RMagick):
+  
+app/uploaders/image_uploader.rb:16:in `include'
+app/uploaders/image_uploader.rb:16:in `<class:ImageUploader>'
+app/uploaders/image_uploader.rb:1:in `<top (required)>'
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/users/sign_in" for ::1 at 2019-10-22 16:01:31 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:01:32 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.9ms | Allocations: 1381)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1743)
+Completed 200 OK in 40ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 34946)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:01:32 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.6ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1058)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.4ms | Allocations: 18240)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:01:33 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4019)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.9ms | Allocations: 21205)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:01:46 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.2ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1058)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 18233)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 16:01:57 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"TJ0D2SD2QPJ3fcdVDDfOvjddrYJ1+BKlC+hfRVSUjMlqvg3am1LGKU2e8fzEeVBLErNiBxKxLsxhX5B82riN+Q==", "blog"=>{"title"=>"今日は晴れです！", "content"=>"今日は晴れです！今日は晴れです！今日は晴れです！今日は晴れです！今日は晴れです！", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b7364e4d8 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-4d0ee3.png>, @original_filename="スクリーンショット 2019-09-23 12.08.04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2019-09-23 12.08.04.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.5ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('今日は晴れです！', '今日は晴れです！今日は晴れです！今日は晴れです！今日は晴れです！今日は晴れです！', '2019-10-22 07:01:57.992765', '2019-10-22 07:01:57.992765', 5, 'スクリーンショット_2019-09-23_12.08.04.png')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/36
+Completed 302 Found in 16ms (ActiveRecord: 2.3ms | Allocations: 5431)
+
+
+Started GET "/blogs/36" for ::1 at 2019-10-22 16:01:58 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 36 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 546)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.6ms | Allocations: 18564)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:02:03 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 4318)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.8ms | Allocations: 21478)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:04:36 +0900
+  
+LoadError (cannot load such file -- RMagick):
+  
+app/uploaders/image_uploader.rb:16:in `include'
+app/uploaders/image_uploader.rb:16:in `<class:ImageUploader>'
+app/uploaders/image_uploader.rb:1:in `<top (required)>'
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/blogs" for ::1 at 2019-10-22 16:04:40 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 9001)
+Completed 200 OK in 57ms (Views: 24.4ms | ActiveRecord: 18.6ms | Allocations: 37500)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:04:40 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4315)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.5ms | Allocations: 21482)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:04:54 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.0ms | Allocations: 966)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1063)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.4ms | Allocations: 18242)
+
+
+Started POST "/blogs" for ::1 at 2019-10-22 16:05:04 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"authenticity_token"=>"QCSAMgNOXdBGLLnTccdILZt2PPBsMYQL7YcmR9IDzUhmB44xuOrbC3zPj3q5idbYvpjzdQt4uGKHMOl+XC/MeA==", "blog"=>{"title"=>"新しいゴルフクラブ", "content"=>"新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b72d545f8 @tempfile=#<Tempfile:/var/folders/vn/6g7b3fhx2ml3j4y7sy6nts5h0000gn/T/RackMultipart20191022-33017-ubglkj.jpg>, @original_filename="golf-clubs-1633748_640 (2).jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"golf-clubs-1633748_640 (2).jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[36mBlog Create (0.4ms)[0m  [1m[32mINSERT INTO `blogs` (`title`, `content`, `created_at`, `updated_at`, `uid`, `image`) VALUES ('新しいゴルフクラブ', '新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ新しいゴルフクラブ', '2019-10-22 07:05:04.735958', '2019-10-22 07:05:04.735958', 5, 'golf-clubs-1633748_640__2_.jpg')[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:25:in `block in create'
+Redirected to http://localhost:3000/blogs/37
+Completed 302 Found in 25ms (ActiveRecord: 2.6ms | Allocations: 5504)
+
+
+Started GET "/blogs/37" for ::1 at 2019-10-22 16:05:04 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 37 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 186)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 0.8ms | Allocations: 18067)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:05:09 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4501)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.8ms | Allocations: 21654)
+
+
+Started DELETE "/blogs/36" for ::1 at 2019-10-22 16:05:16 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UCUbHMF2MWTQHvekpntWrS1alHfbvza3QzofoNrQfYIzx4t+UKoLzgErgbnluaoSz5ttU+voP+stBfz5VCo/tg==", "id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 36 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (1.8ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 36[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 11ms (ActiveRecord: 3.3ms | Allocations: 4497)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:05:16 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4181)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.9ms | Allocations: 21350)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:05:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs" for ::1 at 2019-10-22 16:05:32 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4182)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.8ms | Allocations: 21341)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:05:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs" for ::1 at 2019-10-22 16:05:35 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 4182)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.8ms | Allocations: 21343)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:05:35 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 2.5ms | Allocations: 962)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1059)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 18242)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:05:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:05:42 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.6ms | Allocations: 962)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1059)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.5ms | Allocations: 18230)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:05:43 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.6ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1058)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.5ms | Allocations: 18236)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:05:44 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4181)
+Completed 200 OK in 26ms (Views: 22.2ms | ActiveRecord: 0.8ms | Allocations: 21339)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:05:44 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 5.4ms | Allocations: 962)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1059)
+Completed 200 OK in 33ms (Views: 26.9ms | ActiveRecord: 0.5ms | Allocations: 18235)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:05:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/show" for ::1 at 2019-10-22 16:06:22 +0900
+  
+LoadError (cannot load such file -- RMagick):
+  
+app/uploaders/image_uploader.rb:16:in `include'
+app/uploaders/image_uploader.rb:16:in `<class:ImageUploader>'
+app/uploaders/image_uploader.rb:1:in `<top (required)>'
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/show" for ::1 at 2019-10-22 16:06:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:06:31 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.8ms | Allocations: 1026)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1124)
+Completed 200 OK in 58ms (Views: 14.5ms | ActiveRecord: 19.9ms | Allocations: 34223)
+
+
+Started GET "/" for ::1 at 2019-10-22 16:06:43 +0900
+  
+LoadError (cannot load such file -- RMagick):
+  
+app/uploaders/image_uploader.rb:16:in `include'
+app/uploaders/image_uploader.rb:16:in `<class:ImageUploader>'
+app/uploaders/image_uploader.rb:1:in `<top (required)>'
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2019-10-22 16:06:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-22 16:06:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs/37" for ::1 at 2019-10-22 16:06:50 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 37 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 199)
+Completed 200 OK in 49ms (Views: 12.5ms | ActiveRecord: 17.9ms | Allocations: 34018)
+
+
+Started GET "/" for ::1 at 2019-10-22 16:07:05 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 552)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 1201ms (Views: 1181.6ms | ActiveRecord: 9.7ms | Allocations: 1579632)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:07:07 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1335)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 17192)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:07:08 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 47.5ms | Allocations: 49355)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 49.6ms | Allocations: 49729)
+Completed 200 OK in 83ms (Views: 61.5ms | ActiveRecord: 11.0ms | Allocations: 74022)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:07:09 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4541)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.9ms | Allocations: 21888)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:07:10 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 4.1ms | Allocations: 965)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1063)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 18261)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:07:10 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1138)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.6ms | Allocations: 16833)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:07:11 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4234)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 1.3ms | Allocations: 21394)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:07:16 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1139)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.5ms | Allocations: 16832)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-22 16:07:18 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms | Allocations: 3897)
+
+
+Started GET "/" for ::1 at 2019-10-22 16:07:18 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 88)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 15948)
+
+
+Started POST "/homes/guest_sign_in" for ::1 at 2019-10-22 16:07:20 +0900
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"Ym+9a9Fnk2ZYg1hXyTZCTgdqwiG8G634GQkmLZCAZVJUWnbEY8/LZk9OLExsA9wAuLU0chdL0PIVBVGd1qa3Gw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:3:in `guest_sign_in'
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1238)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:07:20 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.6ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1058)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 18246)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-10-22 16:07:22 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/blogs
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 1933)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:07:22 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 4947)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 22131)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-22 16:07:23 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms | Allocations: 2424)
+
+
+Started GET "/" for ::1 at 2019-10-22 16:07:23 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 15917)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-10-22 16:07:24 +0900
+Started GET "/users/auth/facebook" for ::1 at 2019-10-22 16:07:25 +0900
+Started GET "/users/auth/facebook/callback?code=AQA-0Z7quBQGei2-PKw8cCUEu4O3jtHBoYViXoUcuHmAv-1mb5_RYRlaDUrcTB7FnGFF9_weQD-6arv5QqyaNSsFiISRxztQ16_sfGL3-BGELmiDT67H3x-OfQ96-cCF_vLBwBm01bt23CBwB3kZJ0WMAw5G8esQwOsaup37H02jPslvTOEsBnCuU2-4ed5-cfAe5XhOI9QQ8qXiKO7pE-w8C3Nn5Wzo7mO_E1YMY6vgcOhhRgesSqTPMsvcf7KtuMDbAKrbXLKmO7Q9N6WzsA8J1FzK4HpMlURd0uLlSI7_gL5a-MPZLvWLcfXeGPbC4FXAjo4V-pLcS_A33CAb7Out0VGvBt80YpqbSXe-OuQWvIMvg9GnVZOyE9mldXOKQVE&state=19e36965f061deb3106f38cb1b6e7c266afbff5333355179" for ::1 at 2019-10-22 16:07:26 +0900
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA-0Z7quBQGei2-PKw8cCUEu4O3jtHBoYViXoUcuHmAv-1mb5_RYRlaDUrcTB7FnGFF9_weQD-6arv5QqyaNSsFiISRxztQ16_sfGL3-BGELmiDT67H3x-OfQ96-cCF_vLBwBm01bt23CBwB3kZJ0WMAw5G8esQwOsaup37H02jPslvTOEsBnCuU2-4ed5-cfAe5XhOI9QQ8qXiKO7pE-w8C3Nn5Wzo7mO_E1YMY6vgcOhhRgesSqTPMsvcf7KtuMDbAKrbXLKmO7Q9N6WzsA8J1FzK4HpMlURd0uLlSI7_gL5a-MPZLvWLcfXeGPbC4FXAjo4V-pLcS_A33CAb7Out0VGvBt80YpqbSXe-OuQWvIMvg9GnVZOyE9mldXOKQVE", "state"=>"19e36965f061deb3106f38cb1b6e7c266afbff5333355179"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`uid` = '2386827411580261' AND `users`.`provider` = 'facebook' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:11:in `find_for_oauth'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1182)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:07:27 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3696)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 20865)
+
+
+Started GET "/users/sign_out" for ::1 at 2019-10-22 16:08:18 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 2385)
+
+
+Started GET "/" for ::1 at 2019-10-22 16:08:18 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 15921)
+
+
+Started POST "/homes/guest_sign_in" for ::1 at 2019-10-22 16:08:19 +0900
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"nIa4UbiCVuuw3njm9YBS+yXdqzfLgkUl4M3A1o5c2kQZRWno7T3/bPI9XVMZWCd2sLIIlzRPWRaMeZb9aPvVJg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:3:in `guest_sign_in'
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms | Allocations: 1214)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:08:19 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.7ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1058)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 18253)
+
+
+Started GET "/blogs/new" for ::1 at 2019-10-22 16:08:22 +0900
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.8ms | Allocations: 961)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1058)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 18235)
+
+
+Started GET "/show" for ::1 at 2019-10-22 16:08:23 +0900
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1135)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.5ms | Allocations: 16825)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:24 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4948)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.9ms | Allocations: 22105)
+
+
+Started DELETE "/blogs/28" for ::1 at 2019-10-22 16:08:30 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WD7/TZqDxrul64m6pxbFn1JlmnpgoInEOoNtAs+6qWHd/S70zzxvPOcIrA9LzrASxwo52p9tlfdWNzspKR2mAw==", "id"=>"28"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.3ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 28[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms | Allocations: 4702)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:30 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4628)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.8ms | Allocations: 21803)
+
+
+Started DELETE "/blogs/29" for ::1 at 2019-10-22 16:08:34 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ianHAUZEM0DCxE2XffDMITjhYfUuDDebtyTkXA+KfcsMaha4E/uax4AnaCKRKLmsrY7CVdHBK6jbkLJ36S1yqQ==", "id"=>"29"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.5ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 29[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 11ms (ActiveRecord: 2.6ms | Allocations: 4473)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:34 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4308)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.8ms | Allocations: 21479)
+
+
+Started DELETE "/blogs/30" for ::1 at 2019-10-22 16:08:43 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wTCvkcSrYnVN9+Q/7O+pbasOAq7OGeZC31mQQ2IbD0hE834okRTL8g8UwYoAN9zgPmGhDjHU+nGz7cZohLwAKg==", "id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.3ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 30[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 4466)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:43 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3987)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 21156)
+
+
+Started DELETE "/blogs/31" for ::1 at 2019-10-22 16:08:48 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7XFYyOD/dqKQ4aa4HuuglqOkGVWgtIOWvjsg06rW0QJosolxtUDfJdICgw3yM9UbNsu69V95n6XSj3b4THHeYA==", "id"=>"31"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 31 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.4ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 31[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms | Allocations: 4466)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:48 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3666)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.6ms | Allocations: 20840)
+
+
+Started DELETE "/blogs/32" for ::1 at 2019-10-22 16:08:53 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IsQlmtyRdJkfinrsMlYrAVlBHS85Lcv31VY+YuuYIdWnB/QjiS7dHl1pX1nejl6MzC6+j8bg18S54mhJDT8utw==", "id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.3ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 32[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms | Allocations: 4469)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:53 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3343)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 20512)
+
+
+Started DELETE "/blogs/33" for ::1 at 2019-10-22 16:08:59 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T8jlMllck7qqPMnyKv+zn/K2p8YAGrJjk63cwbBNj6vKCzSLDOM6Pejf7EfGJ8YSZ9kEZv/XrlD/GYrqVuqAyQ==", "id"=>"33"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 33 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.5ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 33[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms | Allocations: 4471)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:08:59 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3159)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.6ms | Allocations: 20334)
+
+
+Started DELETE "/blogs/34" for ::1 at 2019-10-22 16:09:03 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wIJu62mZmFFzwvCilIxuwzXHLpNILWRf3XhDc1dTyDZFQb9SPCYx1jEh1Rd4VBtOoKiNM7fgeGyxzBVYsfTHVA==", "id"=>"34"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 34 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.4ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 34[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms | Allocations: 4470)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:09:03 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2837)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.7ms | Allocations: 20002)
+
+
+Started DELETE "/blogs/35" for ::1 at 2019-10-22 16:09:06 +0900
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1L1bzKQ/KMt4hgrM0CBtGSm7hvu6M+9IaDkWd5GyLDlRfop18YCBTDplL3k8+BiUvNQlW0X+83sEjUBcdxUjWw==", "id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/blogs_controller.rb:59:in `set_blog'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[36mBlog Destroy (0.4ms)[0m  [1m[31mDELETE FROM `blogs` WHERE `blogs`.`id` = 35[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:49:in `destroy'
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms | Allocations: 4468)
+
+
+Started GET "/blogs" for ::1 at 2019-10-22 16:09:06 +0900
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT `blogs`.* FROM `blogs`[0m
+  ↳ app/views/blogs/index.html.erb:4
+  Rendered blogs/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2439)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.6ms | Allocations: 19608)
+
+

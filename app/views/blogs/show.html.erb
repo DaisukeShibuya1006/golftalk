@@ -1,9 +1,16 @@
-
 <div class="container">
-  <p>
+<p>
   <strong>Title:</strong>
   <%= @blog.title %>
 </p>
+
+  <p>
+    <strong>Image</strong>
+    <% if @blog.image? %>
+    <%= image_tag @blog.image.url%>
+    <% end %>
+  </p>
+
 
 <p>
   <strong>Content:</strong>
