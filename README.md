@@ -7,8 +7,10 @@
 
 
 #機能一覧
+・新規登録機能
 ・ログイン機能
-・Oauth認証(Twitter)
+・ログアウト機能
+・Facebookログイン機能
 ・退会機能
 ・ユーザー情報編集機能
 ・ユーザー投稿機能
@@ -23,7 +25,10 @@
 ・MySQL
 ・Heroku
 ・Bootstrap
+・新規登録機能(devise)
 ・ログイン機能(devise)
-・Twitterログイン(OmniAuth)
+・ログアウト機能(devise)
+・Oauth認証(Facebook)
 ・ページネーション機能(kaminari)
 ・画像アップロード機能(CarrierWave)
+・画像サイズ処理機能(RMagick)
