@@ -20,7 +20,6 @@ class User < ApplicationRecord
         image:  auth.info.image
       )
     end
-
-    user
+   user 
   end
 end
