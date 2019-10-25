@@ -25,7 +25,8 @@
           <% if user_signed_in? %>
           <li><a href="/blogs">投稿一覧</a></li>
           <li><a href="/blogs/new">新規投稿</a></li>
-          <li><a href="/show">ユーザー情報</a></li>
+          <li><a href="/users/<%= current_user.id %>">ユーザー情報</a></li>
+          <li><a href="/list">登録ユーザー</a></li>
           <% end %>
       </ul>
 

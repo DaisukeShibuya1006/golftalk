@@ -20,6 +20,12 @@ class User < ApplicationRecord
         image:  auth.info.image
       )
     end
-   user 
+   user
+  end
+
+  has_many :blogs
+
+  def blogs
+    return Blog.where(uid: self.id)
   end
 end

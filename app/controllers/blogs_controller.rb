@@ -2,12 +2,14 @@ class BlogsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @blogs = Blog.all
+    @users = User.all
   end
 
   def show
+    @blog = Blog.find_by(id: params[:id])
+    @user = User.find_by(id: @blog.uid)
   end
 
   def new
