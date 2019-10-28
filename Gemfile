@@ -68,3 +68,6 @@ gem 'font-awesome-rails'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'rmagick'
+
+gem 'kaminari'
+gem 'kaminari-bootstrap'

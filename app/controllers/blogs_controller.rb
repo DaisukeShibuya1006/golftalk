@@ -2,8 +2,11 @@ class BlogsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
+  PER = 5;
+
   def index
-    @blogs = Blog.all.order(created_at: :desc)
+    @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(PER)
+    # @blogs = Blog.page(params[:page]).per(PER)
     @users = User.all
   end
 
