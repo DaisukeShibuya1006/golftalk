@@ -6,8 +6,8 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(PER)
-    # @blogs = Blog.page(params[:page]).per(PER)
     @users = User.all
+    @user = User.find_by(params[:id])
   end
 
   def show

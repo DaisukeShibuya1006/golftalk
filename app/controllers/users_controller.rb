@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  PER = 6;
+
   def index
   end
 
