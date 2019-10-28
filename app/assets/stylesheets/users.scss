@@ -1,3 +1,62 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.icon_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin: 40px 0;
+}
+
+// ログインフォーム
+
+ .login_form {
+   text-align: center;
+ }
+
+
+
+ // 新規登録フォーム
+
+ .container {
+   text-align: center;
+ }
+
+.form-group {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.btn-submit {
+  padding-top: 20px;
+}
+
+.singup-title, .singin-title{
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+// トップページ
+
+.btn {
+  width: 200px;
+}
+
+.Facebook-btn {
+  margin-bottom:70px;
+}
+
+.user-login {
+  margin-top: 30px;
+}
+
+//ユーザー一覧
+
+.user_list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 3px solid #DDDDDD;
+}

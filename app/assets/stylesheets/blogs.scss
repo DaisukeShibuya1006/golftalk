@@ -1,0 +1,62 @@
+.post {
+  margin-top: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+  border-top: 3px solid #DDDDDD;
+}
+
+.content {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.container {
+  max-width: 600px;
+}
+
+h3 {
+  margin: 40px 0;
+}
+
+p {
+  font-weight: bold;
+}
+
+
+.blog-form {
+  margin-left: auto;
+}
+
+input[type="text"] {
+        width: 500px;
+        height: 40px;
+}
+
+
+div.field textarea { width: 500px; height: 150px; }
+
+
+
+.w-100px {
+  width: 100px !important;
+}
+
+.image-upload {
+  display:inline-block;
+}
+
+// 770px以下のレスポンシブ
+
+@media screen and (max-width:770) {
+}
+@media screen and (max-width:767px) {
+  div.field textarea { width: 280px; height: 150px; }
+  input[type="text"] {
+          width: 280px;
+          height: 40px;
+  }
+   .container {
+    width: 500px;
+  }
+}

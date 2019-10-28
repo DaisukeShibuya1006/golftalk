@@ -52,3 +52,22 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
+gem 'carrierwave'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'dotenv-rails'
+
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'devise-bootstrap-views'
+gem 'jquery-rails'
+gem 'rmagick'
+
+gem 'kaminari'
+gem 'kaminari-bootstrap'

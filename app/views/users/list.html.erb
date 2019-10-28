@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>全てのユーザー</h1>
+    <% @users.each do |user| %>
+      <div class="user_list">
+       <%= link_to user.name, user_path(user.id), class: "btn btn-info w-100px"%><br>
+       <img src="<%= user.image %>" class="icon_image"><br>
+      </div>
+    <% end %>
+</div>

@@ -1,0 +1,35 @@
+<%= form_with(model: blog, local: true) do |form| %>
+  <% if blog.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% blog.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container">
+<div class="blog-form">
+  <div class="field">
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="image-upload">
+    <%= form.label :image %>
+    <%= form.file_field :image, autocomplete: 'image'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-info"%>
+  </div>
+</div>
+</div>
+
+<% end %>
