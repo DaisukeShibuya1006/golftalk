@@ -1,19 +1,19 @@
 <div class="container">
-  <h1>Golftalk</h1>
-  <p>ゴルフ好きだけのSNSアプリです。ゴルフに関することを投稿しましょう。</p>
+  <h2>Golftalk</h2>
+  <h4>あなたのゴルフライフをもっと豊かに</h4>
 
-<% if user_signed_in? %>
- <% else %>
-  <div class="user-login">
-    <%= link_to '簡単ログイン', homes_guest_sign_in_path, class: "btn btn-info btn-lg w-50y", method: :post %><br>
+<div class="row">
+  <div class="col-md-4">
+    <p>ゴルフに関する記事投稿ができます。</p>
+    <%= fa_icon("edit 4x") %>
   </div>
-  <div class="user-login">
-    <%= link_to 'ログイン','/users/sign_in', class: "btn btn-info btn-lg w-50y" %><br>
+  <div class="col-md-4">
+    <p>気になるゴルファーをフォローできます。</p>
+    <%= fa_icon("handshake-o 4x") %>
   </div>
-  <div class="user-login">
-    <a href ="/users/auth/facebook">
-      <button type="button" name="button" class="btn btn-info btn-lg w-50y">Facebookログイン</button>
-    </a>
+  <div class="col-md-4">
+    <p>ゴルフニュースをチェックできます。</p>
+    <%= fa_icon("newspaper-o 4x") %>
   </div>
-<% end %>
+</div>
 </div>
