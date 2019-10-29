@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Blog < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
@@ -7,6 +9,6 @@ class Blog < ApplicationRecord
   belongs_to :user
 
   def user
-    return User.find_by(id: self.uid)
+    User.find_by(id: uid)
   end
 end

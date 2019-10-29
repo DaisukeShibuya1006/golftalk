@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
+  PER = 6
 
-  PER = 6;
-
-  def index
-  end
+  def index; end
 
   def show
     @user = User.find_by(id: params[:id])
@@ -13,5 +13,4 @@ class UsersController < ApplicationController
   def list
     @users = User.all.order(created_at: :desc).page(params[:page]).per(PER)
   end
-
 end

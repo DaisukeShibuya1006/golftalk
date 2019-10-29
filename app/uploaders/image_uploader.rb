@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -15,7 +17,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   include CarrierWave::RMagick
 
-  process :resize_to_fit => [500, 500]
+  process resize_to_fit: [500, 500]
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)

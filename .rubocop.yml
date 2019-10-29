@@ -1,0 +1,13 @@
+inherit_from: .rubocop_todo.yml
+
+AsciiComments:
+  Enabled: false
+
+LineLength:
+  Max: 140
+
+ClassAndModuleChildren:
+  Enabled: false
+
+Documentation:
+  Enabled: false
