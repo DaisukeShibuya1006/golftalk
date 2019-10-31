@@ -1,8 +1,5 @@
 <div class="container">
   <div class="user_data">
-    <% if @user.id == current_user.id %>
-      <%= link_to '編集', edit_user_registration_path, class: "btn btn-success w-100px" %>
-    <% end %>
     <h1>マイページ</h1>
     <div class="name">
       名前:<%= @user.name %><br />
@@ -10,6 +7,9 @@
     <div class="email">
       メールアドレス:<%= @user.email %><br />
     </div>
+    <% if @user.id == current_user.id %>
+      <%= link_to '編集', edit_user_registration_path, class: "btn btn-success w-100px" %>
+    <% end %><br>
 
     <img src=<%= @user.image %> class = "icon_image"><br>
 
@@ -17,6 +17,21 @@
     <% @user.liked_blogs.each do |blog| %>
       <%= blog.title%>
     <% end %>
+    <% if @user.id == current_user.id %>
+
+<% else %>
+
+  <% if @isRoom == true %>
+    <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+  <% else %>
+    <%= form_for @room do |f| %>
+      <%= fields_for @entry do |e| %>
+        <%= e.hidden_field :user_id, :value=> @user.id %>
+      <% end %>
+      <%= f.submit "DMを送る" ,class: "btn btn-info w-100px" %>
+    <% end %>
+  <% end %>
+<% end %>
   </div>
  <h3><%= @user.name %>さんの投稿一覧</h3>
   <% @user.blogs.each do |blog| %>
@@ -35,4 +50,6 @@
       <%= link_to '削除', blog, class: "btn btn-info w-100px", method: :delete, data: { confirm: '本当に削除して良いですか？' } %><br>
       <% end %>
     <% end %>
+
+
 </div>
