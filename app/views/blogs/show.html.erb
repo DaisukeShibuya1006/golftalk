@@ -1,9 +1,9 @@
 <div class="container">
-<p>
+
+
+<div>
   <strong>タイトル:</strong><br>
   <%= @blog.title %>
-</p>
-
   <p>
     <% if @blog.image? %>
     <%= image_tag @blog.image.url%>
@@ -13,8 +13,17 @@
   <strong>投稿内容</strong><br>
   <%= @blog.content %>
 </p>
+
+<p>いいね: <%= @blog.likes.count %></p>
+<% if current_user.already_liked?(@blog) %>
+  <%= button_to 'いいね取消', blog_like_path(@blog),remote: true, method: :delete, class: "btn btn-danger w-100px"%>
+<% else %>
+  <%= button_to 'いいね', blog_likes_path(@blog),remote: true, class: "btn btn-danger w-100px"%>
+<% end %>
+
 <%= link_to(@user.name,"/users/#{@user.id}") %><br />
 <img src=<%= @user.image %> class = "icon_image"><br>
+
 
 <h4>コメント一覧</h4>
 <% if @blog.comments.any? %>
