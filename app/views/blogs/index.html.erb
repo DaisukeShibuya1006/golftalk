@@ -14,7 +14,9 @@
     <p><%= blog.content %><br></p>
   </div>
   投稿者:<%= link_to(blog.user.name,"/users/#{blog.user.id}") %><br />
-<p>いいね:<%= blog.liked_users.count %></p>
+<div id="likes_buttons_<%= blog.id %>">
+ <%= render partial: 'likes/like', locals: { blog: blog, likes: @likes} %>
+</div>
 
   <%= link_to '詳細', blog_path(blog), class: "btn btn-danger w-100px" %>
     <% if blog.uid == current_user.id %>

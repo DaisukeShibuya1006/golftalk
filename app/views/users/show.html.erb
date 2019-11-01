@@ -13,16 +13,10 @@
 
     <img src=<%= @user.image %> class = "icon_image"><br>
 
-    <h3>いいねしている投稿</h3>
-    <% @user.liked_blogs.each do |blog| %>
-      <%= blog.title%>
-    <% end %>
-    <% if @user.id == current_user.id %>
-
-<% else %>
-
+<% if @user.id == current_user.id %>
+  <% else %>
   <% if @isRoom == true %>
-    <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+    <p><a href="/rooms/<%= @roomId %>">DMする</a>
   <% else %>
     <%= form_for @room do |f| %>
       <%= fields_for @entry do |e| %>

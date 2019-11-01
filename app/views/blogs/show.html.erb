@@ -21,7 +21,7 @@
   <%= button_to 'いいね', blog_likes_path(@blog),remote: true, class: "btn btn-danger w-100px"%>
 <% end %>
 
-<%= link_to(@user.name,"/users/#{@user.id}") %><br />
+<p>投稿者:<%= link_to(@user.name,"/users/#{@user.id}") %></p><br />
 <img src=<%= @user.image %> class = "icon_image"><br>
 
 
