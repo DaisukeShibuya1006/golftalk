@@ -5,16 +5,22 @@
   </div>
   <% @blogs.each do |blog| %>
   <div class="title">
-    <h3><%= blog.title %></h3>
+    <h3>〜<%= blog.title %>〜</h3>
   </div>
+  <% if blog.image? %>
   <div class="image">
-    <img src=<%= blog.image %>>
+    <img src=<%= blog.image %>
   </div>
+  <% end %>
   <div class="content">
     <p><%= blog.content %><br></p>
   </div>
-  投稿者:<%= link_to(blog.user.name,"/users/#{blog.user.id}") %><br />
 
+  <div class="bloger">
+    <img src="<%= blog.user.image %>" class = "icon_image_mini">
+    <%= link_to(blog.user.name,"/users/#{blog.user.id}") %><br>
+  </div>
+  
   <%= link_to '詳細', blog_path(blog), class: "btn btn-danger w-100px" %>
     <% if blog.uid == current_user.id %>
       <%= link_to '編集', edit_blog_path(blog), class: "btn btn-info w-100px" %>

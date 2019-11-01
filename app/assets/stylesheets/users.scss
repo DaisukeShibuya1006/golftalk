@@ -6,6 +6,18 @@
   margin: 40px 0;
 }
 
+.icon_image_mini {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin: 40px 0;
+}
+
+.bloger {
+  border-top: 2px solid #DDDDDD;
+}
+
 // ログインフォーム
 
  .login_form {
@@ -64,7 +76,5 @@
 //ユーザー一覧
 
 .user_list {
-  margin-top: 50px;
-  margin-bottom: 50px;
   border-top: 3px solid #DDDDDD;
 }
