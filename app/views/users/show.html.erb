@@ -1,11 +1,14 @@
 <div class="container">
   <div class="user_data">
-    <h1>マイページ</h1>
+    <h1><%= @user.name %>さんのページ</h1>
     <div class="name">
       名前:<%= @user.name %><br />
     </div>
-    <div class="email">
-      メールアドレス:<%= @user.email %><br />
+    <div class="average_score">
+      平均スコア:<%= @user.average_score %><br>
+    </div>
+    <div class="self_introduction">
+      <%= @user.self_introduction %>
     </div>
     <% if @user.id == current_user.id %>
       <%= link_to '編集', edit_user_registration_path, class: "btn btn-success w-100px" %>
