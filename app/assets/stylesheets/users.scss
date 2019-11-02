@@ -6,6 +6,13 @@
   margin: 40px 0;
 }
 
+.icon_image_blog {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
 .icon_image_mini {
   width: 100px;
   height: 100px;
@@ -15,7 +22,8 @@
 }
 
 .bloger {
-  border-top: 2px solid #DDDDDD;
+  width: 30%;
+  height: 30px;
 }
 
 // ログインフォーム

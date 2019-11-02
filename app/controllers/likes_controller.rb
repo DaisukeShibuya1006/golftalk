@@ -1,12 +1,20 @@
 class LikesController < ApplicationController
-  def create
-    @like = current_user.likes.create(blog_id: params[:blog_id])
-    redirect_to blogs_path
+  before_action :set_variables
+
+  def like
+    like = current_user.likes.new(blog_id: @blog.id)
+    like.save
   end
 
-  def destroy
-    @like = Like.find_by(blog_id: params[:blog_id], user_id: current_user.id)
-    @like.destroy
-    redirect_to blogs_path
+  def unlike
+    like = current_user.likes.find_by(blog_id: @blog.id)
+    like.destroy
+  end
+
+  private
+
+  def set_variables
+    @blog = Blog.find(params[:blog_id])
+    @id_name = "#like-link-#{@blog.id}"
   end
 end

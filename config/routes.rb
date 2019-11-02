@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   resources :messages, :only => [:create]
   resources :rooms, :only => [:create, :show, :index]
 
+  post   '/like/:blog_id' => 'likes#like',   as: 'like'
+  delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'
+
   get '/', to: 'users#index'
 
   get '/users/:id', to: 'users#show', as: :user

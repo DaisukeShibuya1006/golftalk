@@ -25,7 +25,7 @@ class User < ApplicationRecord
 
   has_many :blogs
   has_many :likes
-  has_many :liked_blogs,through: :likes, source: :blog
+  has_many :like_blogs,through: :likes, source: :blog
 
   has_many :messages
   has_many :entries

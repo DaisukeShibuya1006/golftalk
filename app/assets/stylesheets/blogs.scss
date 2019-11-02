@@ -7,9 +7,23 @@
   border-top: 3px solid #DDDDDD;
 }
 
+.title h4 {
+  margin-left: 140px;
+}
+
+.blog_show {
+  text-align: center;
+}
+
+.blog_show p {
+  text-align: center;
+  margin-left: 100px;
+}
+
 .content {
   margin-bottom: 40px;
   margin-top: 40px;
+  margin-left: 150px;
 }
 .container {
   max-width: 600px;
@@ -21,6 +35,7 @@ h3 {
 
 p {
   font-weight: bold;
+  width: 400px;
 }
 
 
@@ -59,4 +74,11 @@ div.field textarea { width: 500px; height: 150px; }
    .container {
     width: 500px;
   }
+}
+
+.blog_image {
+  width: 400px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 140px;
 }
