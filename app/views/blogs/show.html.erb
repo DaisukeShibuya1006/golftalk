@@ -20,7 +20,7 @@
   </ul>
   <% end %>
   <%= form_for([@blog, @blog.comments.build]) do |f| %>
-    <p><%= f.text_field :body%></p>
+    <%= f.text_field :body%><br>
     <%= f.submit %>
   <% end %>
   <br>
