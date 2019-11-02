@@ -1,1 +1,10 @@
 .env
+
+/.bundle
+
+vendor/bundle
+
+/log/*.log
+/tmp
+
+node_modules/
