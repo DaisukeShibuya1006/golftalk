@@ -3,12 +3,12 @@
 Rails.application.routes.draw do
   resources :blogs do
     resources :comments
-    resources :likes, only: [:create, :destroy]
+    resources :likes, only: %i[create destroy]
   end
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: 'registrations' }
 
-  resources :messages, :only => [:create]
-  resources :rooms, :only => [:create, :show, :index]
+  resources :messages, only: [:create]
+  resources :rooms, only: %i[create show index]
 
   post   '/like/:blog_id' => 'likes#like',   as: 'like'
   delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'

@@ -25,13 +25,13 @@ class User < ApplicationRecord
 
   has_many :blogs
   has_many :likes
-  has_many :like_blogs,through: :likes, source: :blog
+  has_many :like_blogs, through: :likes, source: :blog
 
   has_many :messages
   has_many :entries
 
   def already_liked?(blog)
-    self.likes.exists?(blog_id: blog.id)
+    likes.exists?(blog_id: blog.id)
   end
 
   def blogs
