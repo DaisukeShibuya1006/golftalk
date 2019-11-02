@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Blog < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
@@ -5,8 +7,11 @@ class Blog < ApplicationRecord
   mount_uploader :image, ImageUploader
 
   belongs_to :user
+  has_many :comments
+  has_many :likes
+  has_many :liking_users, through: :likes, source: :user
 
   def user
-    return User.find_by(id: self.uid)
+    User.find_by(id: uid)
   end
 end

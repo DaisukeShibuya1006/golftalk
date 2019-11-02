@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 class BlogsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
-  PER = 5;
+  PER = 5
 
   def index
     @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(PER)
     @users = User.all
     @user = User.find_by(params[:id])
+
   end
 
   def show
@@ -19,8 +21,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @blog = Blog.new(blog_params)
@@ -49,7 +50,6 @@ class BlogsController < ApplicationController
     end
   end
 
-
   def destroy
     @blog.destroy
     respond_to do |format|
@@ -60,11 +60,11 @@ class BlogsController < ApplicationController
 
   private
 
-    def set_blog
-      @blog = Blog.find(params[:id])
-    end
+  def set_blog
+    @blog = Blog.find(params[:id])
+  end
 
-    def blog_params
-      params.require(:blog).permit(:title, :content, :image)
-    end
+  def blog_params
+    params.require(:blog).permit(:title, :content, :image)
+  end
 end

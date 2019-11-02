@@ -1,26 +1,29 @@
 <div class="container" class="posts">
   <h1>投稿一覧</h1>
+  <%= render partial: 'blogs/blogs', collection: @blogs, as: :blog %>
 <div class="post">
-  <div class="user_data">
-  </div>
   <% @blogs.each do |blog| %>
   <div class="title">
-    <h3><%= blog.title %></h3>
+    <div class="bloger">
+      <%= link_to(blog.user.name,"/users/#{blog.user.id}") %><br>
+      <img src="<%= blog.user.image %>" class = "icon_image_blog">
+    </div>
+    <h4>〜<%= blog.title %>〜</h4>
   </div>
+  <% if blog.image? %>
   <div class="image">
-    <img src=<%= blog.image %>>
+    <img src=<%= blog.image %> class = "blog_image">
   </div>
+  <% end %>
   <div class="content">
     <p><%= blog.content %><br></p>
   </div>
-  投稿者:<%= link_to(blog.user.name,"/users/#{blog.user.id}") %><br />
-
   <%= link_to '詳細', blog_path(blog), class: "btn btn-danger w-100px" %>
     <% if blog.uid == current_user.id %>
       <%= link_to '編集', edit_blog_path(blog), class: "btn btn-info w-100px" %>
       <%= link_to '削除', blog, class: "btn btn-info w-100px", method: :delete, data: { confirm: '本当に削除して良いですか？' } %>
       <% end %>
     <% end %>
-    <%= paginate @blogs %>
  </div>
+ <%= paginate @blogs %>
 </div>

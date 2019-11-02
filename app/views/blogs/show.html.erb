@@ -1,20 +1,29 @@
 <div class="container">
-<p>
+ <div class="blog_show">
   <strong>タイトル:</strong><br>
   <%= @blog.title %>
-</p>
-
-  <p>
     <% if @blog.image? %>
-    <%= image_tag @blog.image.url%>
+    <%= image_tag @blog.image.url%><br>
     <% end %>
-  </p>
-<p>
-  <strong>投稿内容</strong><br>
-  <%= @blog.content %>
-</p>
-<%= link_to(@user.name,"/users/#{@user.id}") %><br />
-<img src=<%= @user.image %> class = "icon_image"><br>
+    <strong>投稿内容</strong><br>
+    <%= @blog.content %><br>
 
+  投稿者:<%= link_to(@user.name,"/users/#{@user.id}") %><br />
+  <img src=<%= @user.image %> class = "icon_image"><br>
+
+  <h4>コメント一覧</h4>
+  <% if @blog.comments.any? %>
+  <ul>
+    <% @blog.comments.each do |comment| %>
+      <li><%= comment.body %></li>
+    <% end %>
+  </ul>
+  <% end %>
+  <%= form_for([@blog, @blog.comments.build]) do |f| %>
+    <%= f.text_field :body%><br>
+    <%= f.submit %>
+  <% end %>
+  <br>
+</div>
 <%= link_to '投稿一覧に戻る', blogs_path %>
 </div>
