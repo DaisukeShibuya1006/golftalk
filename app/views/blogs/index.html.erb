@@ -17,6 +17,7 @@
   <div class="content">
     <p><%= blog.content %><br></p>
   </div>
+  <p>いいね:<%= blog.liked_users.count %></p><br>
   <%= link_to '詳細', blog_path(blog), class: "btn btn-danger w-100px" %>
     <% if blog.uid == current_user.id %>
       <%= link_to '編集', edit_blog_path(blog), class: "btn btn-info w-100px" %>

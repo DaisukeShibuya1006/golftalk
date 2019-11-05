@@ -14,13 +14,15 @@ class BlogsController < ApplicationController
   def show
     @blog = Blog.find_by(id: params[:id])
     @user = User.find_by(id: @blog.uid)
+    @like = Like.new
   end
 
   def new
     @blog = Blog.new
   end
 
-  def edit; end
+  def edit
+  end
 
   def create
     @blog = Blog.new(blog_params)
