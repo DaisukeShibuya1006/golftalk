@@ -7,7 +7,6 @@
     <% end %>
     <strong>投稿内容</strong><br>
     <%= @blog.content %><br>
-
   投稿者:<%= link_to(@user.name,"/users/#{@user.id}") %><br />
   <img src=<%= @user.image %> class = "icon_image"><br>
 
