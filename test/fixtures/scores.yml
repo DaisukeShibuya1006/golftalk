@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  when: 1
+  course: MyString
+  record: 1
+  patting: 1
+  thoughts: MyText
+
+two:
+  when: 1
+  course: MyString
+  record: 1
+  patting: 1
+  thoughts: MyText

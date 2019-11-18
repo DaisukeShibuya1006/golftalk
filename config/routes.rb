@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   post 'posts/complete' => 'posts#create'
 
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
+
+  resources :records
 end
