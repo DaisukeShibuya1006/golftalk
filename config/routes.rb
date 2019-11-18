@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   end
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: 'registrations' }
 
-  resources :messages, :only => [:create]
-  resources :rooms, :only => [:create, :show, :index]
+  resources :messages, only: [:create]
+  resources :rooms, only: [:create, :show, :index]
 
   post   '/like/:blog_id' => 'likes#like',   as: 'like'
   delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'
@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   post 'posts/complete' => 'posts#create'
 
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
+
+  resources :records
 end

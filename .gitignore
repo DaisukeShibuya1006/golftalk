@@ -8,3 +8,6 @@ vendor/bundle
 /tmp
 
 node_modules/
+
+/storage/*
+!/storage/.keep

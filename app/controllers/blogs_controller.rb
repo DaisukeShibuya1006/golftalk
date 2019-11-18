@@ -9,19 +9,20 @@ class BlogsController < ApplicationController
     @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(PER)
     @users = User.all
     @user = User.find_by(params[:id])
-
   end
 
   def show
     @blog = Blog.find_by(id: params[:id])
     @user = User.find_by(id: @blog.uid)
+    @like = Like.new
   end
 
   def new
     @blog = Blog.new
   end
 
-  def edit; end
+  def edit
+  end
 
   def create
     @blog = Blog.new(blog_params)
