@@ -29,12 +29,15 @@
   ・Ruby on rails 6.0.0   
   ・MySQL 
   ・Heroku  
-  .AWS  
-  　 VPC  
-     EC2  
-     RDS  
-     S3  
-  ・Bootstrap   
+  * AWS  
+     * VPC
+     * EC2  
+     * RDS  
+     * S3  
+     * Route53  
+     * ACM  
+  ・Bootstrap  
+  ・Capistrano　　
   ・新規登録機能(devise)  
   ・ログイン機能(devise)  
   ・ログアウト機能(devise)  
