@@ -28,7 +28,12 @@
   ・Ruby2.5.0  
   ・Ruby on rails 6.0.0   
   ・MySQL 
-  ・Heroku  
+  ・Heroku
+  .AWS 
+  　 VPC
+     EC2
+     RDS
+     S3
   ・Bootstrap   
   ・新規登録機能(devise)  
   ・ログイン機能(devise)  
