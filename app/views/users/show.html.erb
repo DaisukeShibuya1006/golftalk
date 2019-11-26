@@ -1,13 +1,6 @@
 <div class="container">
   <div class="user_data">
-    <%= @user.follow_count %>
-    <%= link_to "フォロー", {controller: :users,action: :follow_list,user_id: @user.id}, method: :get %> 
-    <%= @user.followers_count %>
-    <%= link_to "フォロワー", {controller: :users,action: :follower_list,user_id: @user.id}, method: :get %>
-    <% if current_user.id != @user.id %>
-      <%= render 'follow_form' %>
-    <% end %>
-    <h1><%= @user.name %>さんのページ</h1>
+    <h3><%= @user.name %>さんのページ</h3>
     <div class="name">
       名前:<%= @user.name %><br />
     </div>
@@ -23,6 +16,14 @@
 
     <img src=<%= @user.image %> class = "icon_image"><br>
 
+    <%= @user.follow_count %>
+    <%= link_to "フォロー", {controller: :users,action: :follow_list,user_id: @user.id}, method: :get %>
+    <%= @user.followers_count %>
+    <%= link_to "フォロワー", {controller: :users,action: :follower_list,user_id: @user.id}, method: :get %>
+    <% if current_user.id != @user.id %>
+      <%= render 'follow_form' %>
+    <% end %>
+    
 <% if @user.id == current_user.id %>
   <% else %>
   <% if @isRoom == true %>
