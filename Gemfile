@@ -78,3 +78,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'rubocop-rails'
 end
+
+group :production do
+  gem 'unicorn', '~> 5.4.1'
+end
