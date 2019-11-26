@@ -27,9 +27,11 @@ http://www.withgol.xyz/
 # 使用している技術
   ・Ruby2.5.0  
   ・Ruby on rails 6.0.0   
-  ・MySQL 
-  ・Heroku  
-  * AWS  
+  ・MySQL  
+  ・Nginx  
+  ・Unicorn  
+  
+  * AWS 
      * VPC
      * EC2  
      * RDS  
