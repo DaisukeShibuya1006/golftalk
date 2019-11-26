@@ -32,4 +32,24 @@ class UsersController < ApplicationController
   def list
     @users = User.all.order(created_at: :desc).page(params[:page]).per(PER)
   end
+
+  def follow
+    @user = User.find(params[:id])
+    current_user.follow(@user)
+    redirect_to user_path(@user)
+  end
+
+  def unfollow
+    @user = User.find(params[:id])
+    current_user.stop_following(@user)
+    redirect_to user_path(@user)
+  end
+
+  def follow_list
+    @user = User.find(params[:id])
+  end
+
+  def follower_list
+    @user = User.find(params[:id])
+  end
 end
