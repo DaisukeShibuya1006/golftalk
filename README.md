@@ -37,7 +37,7 @@ https://www.withgol.xyz/
       * ACM
       * IAM
       * S3
-      
+  * rubocop  
   * 新規登録機能(devise)  
   * ログイン機能(devise)  
   * ログアウト機能(devise)  
