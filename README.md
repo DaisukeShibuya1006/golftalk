@@ -2,7 +2,7 @@
 「ゴルフの楽しさをもっと多くの人に伝えたい！」という思いを込めて、"ウィズゴル"を開発しました。
 
 # URL 
-https://www.withgol.xyz/users/sign_in
+https://www.withgol.xyz/
 
 # クラウドアーキテクチャ
 
