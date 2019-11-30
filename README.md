@@ -1,7 +1,7 @@
 # ウィズゴル
 「ゴルフの楽しさをもっと多くの人に伝えたい！」という思いを込めて、"ウィズゴル"を開発しました。
 
-# URL 
+# URL
 https://www.withgol.xyz/
 
 # クラウドアーキテクチャ
@@ -27,17 +27,19 @@ https://www.withgol.xyz/
 # 使用している技術
   * Ruby2.5.0  
   * Ruby on rails 6.0.0   
-  * MySQL 
-  * AWS 
+  * MySQL
+  * AWS
       * VPC
       * EC2
-      * RDS 
+      * RDS
       * Route53
       * ALB
       * ACM
       * IAM
       * S3
   * rubocop  
+  * Unicorn  
+  * Nginx  
   * 新規登録機能(devise)  
   * ログイン機能(devise)  
   * ログアウト機能(devise)  
@@ -46,4 +48,3 @@ https://www.withgol.xyz/
   * 画像アップロード機能(CarrierWave)  
   * 画像サイズ処理機能(RMagick)  
   * レスポンシブ機能(bootstrap)  
-
