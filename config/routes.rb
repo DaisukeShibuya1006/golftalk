@@ -31,4 +31,5 @@ Rails.application.routes.draw do
 
   get 'users/follow_list/:id' => 'users#follow_list'
   get 'users/follower_list/:id' => 'users#follower_list'
+
 end

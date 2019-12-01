@@ -22,6 +22,8 @@ class BlogsController < ApplicationController
   end
 
   def edit
+    @blog = Blog.find_by(id: params[:id])
+    @user = User.find_by(id: @blog.uid)
   end
 
   def create
@@ -40,6 +42,7 @@ class BlogsController < ApplicationController
   end
 
   def update
+    @blog = Blog.find(params[:id])
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: '編集内容が反映されました。' }
@@ -52,6 +55,7 @@ class BlogsController < ApplicationController
   end
 
   def destroy
+    @blog = Blog.find(params[:id])
     @blog.destroy
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: '投稿を削除しました。' }
