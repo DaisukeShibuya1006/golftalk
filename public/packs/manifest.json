@@ -9,6 +9,16 @@
       "js.map": [
         "/packs/js/application-d077c8a5faefb885492b.js.map"
       ]
+    },
+    "hello_vue": {
+      "js": [
+        "/packs/js/hello_vue-95a395c78a156103916c.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_vue-95a395c78a156103916c.js.map"
+      ]
     }
-  }
+  },
+  "hello_vue.js": "/packs/js/hello_vue-95a395c78a156103916c.js",
+  "hello_vue.js.map": "/packs/js/hello_vue-95a395c78a156103916c.js.map"
 }
