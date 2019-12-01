@@ -85,4 +85,4 @@ end
 
 gem "acts_as_follower", github: "tcocca/acts_as_follower"
 
-gem 'fog'
+gem 'fog-aws'
