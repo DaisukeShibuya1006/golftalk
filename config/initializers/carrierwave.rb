@@ -6,6 +6,7 @@ CarrierWave.configure do |config|
     aws_secret_access_key: ENV['aws_secret_access_key'],
     region: 'ap-northeast-1'
   }
+  config.fog_provider = 'fog/aws'
   config.fog_directory = 'rails-photo-1006'
   config.cache_storage = :fog
 
