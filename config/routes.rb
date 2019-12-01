@@ -25,4 +25,10 @@ Rails.application.routes.draw do
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
 
   resources :records
+
+  put 'users/follow/:id' =>'users#follow'
+  put 'users/unfollow/:id' => 'users#unfollow'
+
+  get 'users/follow_list/:id' => 'users#follow_list'
+  get 'users/follower_list/:id' => 'users#follower_list'
 end

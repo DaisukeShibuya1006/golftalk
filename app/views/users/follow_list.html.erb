@@ -1,0 +1,7 @@
+<div class="container">
+  <% @user.all_following.each do |user| %>
+    <%= user.name %>
+      <img src=<%= @user.image %> class = "icon_image"><br>
+    <%= link_to '詳細', user_path(user) %>
+  <% end %>
+</div>

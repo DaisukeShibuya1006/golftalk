@@ -3,7 +3,9 @@
   <strong>タイトル:</strong><br>
   <%= @blog.title %>
     <% if @blog.image? %>
-    <%= image_tag @blog.image.url%><br>
+    <div class="image">
+      <%= image_tag @blog.image.url, :size =>'300x200'%>
+    </div><br>
     <% end %>
     <strong>投稿内容</strong><br>
     <%= @blog.content %><br>
