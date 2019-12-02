@@ -1,38 +1,36 @@
 <div class="container">
  <div class="blog_show">
-  <strong>タイトル:</strong><br>
-  <%= @blog.title %>
+   <img src=<%= @user.image %> class = "icon_image">
+   <%= link_to(@user.name,"/users/#{@user.id}") %><br />
     <% if @blog.image? %>
     <div class="image">
       <%= image_tag @blog.image.url, :size =>'250x200'%>
     </div><br>
     <% end %>
-    <strong>投稿内容</strong><br>
-    <%= @blog.content %><br>
-  投稿者:<%= link_to(@user.name,"/users/#{@user.id}") %><br />
-  <img src=<%= @user.image %> class = "icon_image"><br>
-
-
-  <h3>いいね<%= @blog.likes.count %></h3>
+    <div class="content">
+      <p><%= @blog.content %></p><br>
+    </div>
+  <h3><%= fa_icon("thumbs-o-up") %><%= @blog.likes.count %></h3>
   <% if current_user.already_liked?(@blog) %>
-    <%= button_to 'いいねを取り消す', blog_like_path(@blog), method: :delete %>
+    <%= button_to 'いいねを取り消す', blog_like_path(@blog), method: :delete, class: 'btn btn-warning' %>
   <% else %>
-    <%= button_to 'いいね', blog_likes_path(@blog) %>
+    <%= button_to 'いいね', blog_likes_path(@blog),class: 'btn btn-success' %>
   <% end %>
-
+  <div class="back_to_blog_index">
+    <%= link_to '投稿一覧に戻る', blogs_path %><br>
+  </div>
+<div class="comment">
   <h4>コメント一覧</h4>
   <% if @blog.comments.any? %>
-  <ul>
     <% @blog.comments.each do |comment| %>
-      <li><%= comment.body %></li>
+      <p><%= comment.body %></p>
     <% end %>
-  </ul>
   <% end %>
   <%= form_for([@blog, @blog.comments.build]) do |f| %>
-    <%= f.text_field :body%><br>
+    <%= f.text_field :body%>
     <%= f.submit %>
   <% end %>
   <br>
 </div>
-<%= link_to '投稿一覧に戻る', blogs_path %>
+</div>
 </div>

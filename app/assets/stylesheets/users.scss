@@ -7,8 +7,8 @@
 }
 
 .icon_image_blog {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 100px;
   object-fit: cover;
 }
@@ -22,8 +22,7 @@
 }
 
 .bloger {
-  width: 30%;
-  height: 30px;
+ text-align: left;
 }
 
 // ログインフォーム
@@ -38,6 +37,8 @@
 
  .container {
    text-align: center;
+   padding-right: 0px;
+   padding-left: 0px;
  }
 
 .form-group {
@@ -80,6 +81,7 @@
 .container h4 {
   margin-bottom: 40px;
 }
+
 
 //ユーザー一覧
 

@@ -1,5 +1,8 @@
 .container {
   max-width: 900px;
+  min-width: 350px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .post {
@@ -33,7 +36,7 @@ h3 {
 
 .content p {
   font-weight: bold;
-  width: 300px;
+  width: 240px;
   margin: auto;
 }
 
@@ -76,13 +79,24 @@ div.field textarea {
           height: 30px;
   }
    .container {
-    max-width: 300px;
+    max-width: 350px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
+
 
 .blog_image {
   width: 300px;
   height: 150px;
   object-fit: cover;
   margin-top: 30px;
+}
+
+.comment {
+  margin-top: 70px;
+}
+
+.back_to_blog_index{
+  margin-top: 50px;
 }
