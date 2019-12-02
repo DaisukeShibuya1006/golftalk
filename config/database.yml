@@ -14,7 +14,7 @@ default: &default
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: 
+  password:
   socket: /tmp/mysql.sock
 
 development:
@@ -49,6 +49,11 @@ test:
 #
 production:
   <<: *default
-  database: golftalk_production
+  database: golftalk_new_production
   username: root
   password: kazaana1006
+  encoding: utf8
+  adapter: mysql2
+  host: database-golftalk-new.cnkmslejzehz.ap-northeast-1.rds.amazonaws.com
+  port: 3306
+  socket: /var/lib/mysql/mysql.sock
