@@ -22,16 +22,16 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.submit  t('.sign_in'), class: 'btn btn-info btn-lg w-50' %>
+    <%= f.submit  t('.sign_in'), class: 'btn btn-success btn-lg w-50' %>
   </div>
   <div class="form-group">
-    <%= link_to '簡単ログイン', homes_guest_sign_in_path, class: "btn btn-info btn-lg w-50y", method: :post %>
+    <%= link_to '簡単ログイン', homes_guest_sign_in_path, class: "btn btn-success btn-lg w-50y", method: :post %>
   </div>
-  
+
   <div class="form-group">
-  <a href ="/users/auth/facebook">
-    <button type="button" name="button" class="btn btn-info btn-lg w-50y">Facebookログイン</button>
-  </a>
+    <a href ="/users/auth/facebook">
+     <button type="button" name="button" class="btn btn-primary btn-lg w-50"><%= fa_icon("facebook-square") %>Facebookログイン</button>
+    </a>
   </div>
 <% end %>
 

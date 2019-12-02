@@ -1,5 +1,5 @@
-<div class="container">
-  <h3 class="text-center">記事を投稿する</h3>
-  <%= render 'form', blog: @blog %>
+<div class="blog-new">
+  <h3 class="text-center">新規投稿</h3>
+  <p><%= render 'form', blog: @blog %></p>
   <p class="text-center"><%= link_to '投稿一覧に戻る', blogs_path %></p>
 </div>
