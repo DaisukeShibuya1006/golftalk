@@ -4,13 +4,14 @@
   <%= @blog.title %>
     <% if @blog.image? %>
     <div class="image">
-      <%= image_tag @blog.image.url, :size =>'300x200'%>
+      <%= image_tag @blog.image.url, :size =>'250x200'%>
     </div><br>
     <% end %>
     <strong>投稿内容</strong><br>
     <%= @blog.content %><br>
   投稿者:<%= link_to(@user.name,"/users/#{@user.id}") %><br />
   <img src=<%= @user.image %> class = "icon_image"><br>
+
 
   <h3>いいね<%= @blog.likes.count %></h3>
   <% if current_user.already_liked?(@blog) %>
