@@ -19,6 +19,10 @@
   <div class="back_to_blog_index">
     <%= link_to '投稿一覧に戻る', blogs_path %><br>
   </div>
+  <% if @blog.uid == current_user.id %>
+    <%= link_to '編集', edit_blog_path(@blog), class: "btn btn-warning w-100px" %>
+    <%= link_to '削除', @blog, class: "btn btn-danger w-100px", method: :delete, data: { confirm: '本当に削除して良いですか？' } %>
+  <% end %>
 <div class="comment">
   <h4>コメント一覧</h4>
   <% if @blog.comments.any? %>
@@ -32,4 +36,4 @@
   <% end %>
   <br>
  </div>
-</div> 
+</div>

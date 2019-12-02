@@ -2,6 +2,7 @@
   <h3>投稿一覧</h3>
 <div class="post">
   <% @blogs.each do |blog| %>
+  <a href="">
   <div class="title">
     <div class="bloger">
       <img src="<%= blog.user.image %>" class = "icon_image_blog">
@@ -17,6 +18,7 @@
   <div class="content">
     <p><%= blog.content %><br></p>
   </div>
+  </a>
   <h3><%= fa_icon("thumbs-o-up") %><%= blog.liked_users.count %></h3><br>
   <%= link_to '詳細', blog_path(blog), class: "btn btn-success w-100px" %>
   <% end %>

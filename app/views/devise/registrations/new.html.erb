@@ -2,7 +2,7 @@
 <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="singup-title">
-    <h3>新規登録</h3>
+    新規登録
   </div>
   <div class="form-group">
     <%= f.label :name %>
@@ -35,11 +35,11 @@
 
 
   <div class="form-group" class="btn-submit">
-    <%= f.submit t('.sign_up'), class: 'btn btn-info btn-lg w-50'%>
+    <%= f.submit t('.sign_up'), class: 'btn btn-success btn-lg w-50'%>
   </div>
   <div class="form-group" class="Facebook-btn">
   <a href ="/users/auth/facebook">
-    <button type="button" name="button" class="btn btn-info btn-lg w-50">Facebookログイン</button>
+    <button type="button" name="button" class="btn btn-primary btn-lg w-50"><%= fa_icon("facebook-square") %>Facebookログイン</button>
   </a>
   </div>
 <% end %>
