@@ -1,9 +1,7 @@
 <div class="container">
-  <h1></h1>
-
+  <h3>フォロワーリスト</h3>
   <% @user.followers.each do |user| %>
-    <%= user.name %>
+    <%= link_to(user.name,"/users/#{user.id}") %>
     <img src=<%= @user.image %> class = "icon_image"><br>
-    <%= link_to '詳細', user_path(user) %>
   <% end %>
 </div>

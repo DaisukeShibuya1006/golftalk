@@ -4,8 +4,6 @@
 # URL
 https://www.withgol.xyz/
 
-# クラウドアーキテクチャ
-
 # 機能一覧
   * 新規登録機能  
   * ログイン機能  
@@ -38,6 +36,7 @@ https://www.withgol.xyz/
       * IAM
       * S3
   * rubocop  
+  * RSpec  
   * Unicorn  
   * Nginx  
   * 新規登録機能(devise)  
