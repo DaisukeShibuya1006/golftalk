@@ -86,3 +86,9 @@ end
 gem "acts_as_follower", github: "tcocca/acts_as_follower"
 
 gem 'fog-aws'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+end

@@ -38,6 +38,7 @@ https://www.withgol.xyz/
       * IAM
       * S3
   * rubocop  
+  * RSpec  
   * Unicorn  
   * Nginx  
   * 新規登録機能(devise)  
