@@ -12,7 +12,7 @@ class ScoreManagementsController < ApplicationController
   # GET /score_managements/1
   # GET /score_managements/1.json
   def show
-    @score_management = ScoreManagement.find(params[:id])
+    @score_management = ScoreManagement.find(params[:id]).order(created_at: :desc)
   end
 
   def myscore
@@ -36,7 +36,6 @@ class ScoreManagementsController < ApplicationController
     @score_management.uid = current_user.id
     respond_to do |format|
       if @score_management.save
-        # format.html { redirect_to @score_management, notice: 'スコアを入力できました！' }
         format.html { redirect_to user_path(current_user), notice: 'スコアを入力できました！' }
         format.json { render :show, status: :created, location: @score_management }
       else

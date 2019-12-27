@@ -7,6 +7,8 @@
 
 .post {
   margin-top: 50px;
+  margin: auto;
+  width: 600px;
 }
 
 .title {
@@ -46,17 +48,13 @@ h3 {
 }
 
 input[type="text"] {
-        width: 300px;
+        width: 200px;
         height: 40px;
 }
 
 
 div.field textarea {
-  width: 500px; height: 150px;
-}
-
-.actions {
-  margin-top: 30px;
+  width: 300px; height: 150px;
 }
 
 
@@ -81,6 +79,12 @@ div.field textarea {
     padding-right: 0px;
     padding-left: 0px;
   }
+
+  .post {
+    margin-top: 50px;
+    width: 350px;
+  }
+
 }
 
 

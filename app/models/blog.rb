@@ -14,4 +14,6 @@ class Blog < ApplicationRecord
   def user
     User.find_by(id: uid)
   end
+
+  default_scope -> { order(created_at: :desc) }
 end
