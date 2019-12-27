@@ -26,9 +26,11 @@ class User < ApplicationRecord
   has_many :blogs
   has_many :messages
   has_many :entries
+  has_many :score_managements
 
   has_many :likes, dependent: :destroy
   has_many :liked_blogs, through: :likes, source: :blog
+
 
   acts_as_followable
   acts_as_follower
@@ -39,5 +41,9 @@ class User < ApplicationRecord
 
   def blogs
     Blog.where(uid: id)
+  end
+
+  def score_managements
+    ScoreManagement.where(uid: id)
   end
 end

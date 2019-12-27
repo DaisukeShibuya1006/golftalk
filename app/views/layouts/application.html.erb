@@ -26,8 +26,9 @@
           <% if user_signed_in? %>
           <li><a href="/blogs">投稿一覧</a></li>
           <li><a href="/blogs/new">新規投稿</a></li>
-          <li><a href="/users/<%= current_user.id %>">ユーザー情報</a></li>
-          <li><a href="/list">登録ユーザー</a></li>
+          <li><a href="/score_managements/new">スコア管理</a></li>
+          <li><a href="/users/<%= current_user.id %>">マイページ</a></li>
+          <li><a href="/list">ユーザーリスト</a></li>
           <% end %>
       </ul>
 

@@ -1,0 +1,18 @@
+<p>
+  <strong>プレー日</strong>
+  <%= @score_management.when %>
+</p>
+
+<p>
+  <strong>コース</strong>
+  <%= @score_management.course %>
+</p>
+
+<p>
+  <strong>スコア</strong>
+  <%= @score_management.stroke %>
+</p>
+
+
+<%= link_to 'Edit', edit_score_management_path(@score_management) %> |
+<%= link_to 'Back', score_managements_path %>

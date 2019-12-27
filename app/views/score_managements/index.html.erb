@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>スコア管理</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>When</th>
+      <th>Course</th>
+      <th>Stroke</th>
+      <th>Patting</th>
+      <th>Thought</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @score_managements.each do |score_management| %>
+      <tr>
+        <td><%= score_management.when %></td>
+        <td><%= score_management.course %></td>
+        <td><%= score_management.stroke %></td>
+        <td><%= link_to 'Show', score_management %></td>
+        <td><%= link_to 'Edit', edit_score_management_path(score_management) %></td>
+        <td><%= link_to 'Destroy', score_management, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Score Management', new_score_management_path %>
