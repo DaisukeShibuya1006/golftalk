@@ -37,6 +37,34 @@
     <% end %>
   <% end %>
 <% end %>
+
+<% if @user.id == current_user.id %>
+<p class="add_score"><%= link_to "スコアを記録する", new_score_management_path %></p>
+<div class="score_management">
+  <p><%= @user.name %>さんのゴルフスコア</p>
+     <table>
+       <thead>
+         <tr>
+           <th>プレー日</th>
+           <th>コース名</th>
+           <th>スコア</th>
+         </tr>
+       </thead>
+       <tbody>
+         <% @user.score_managements.each do |score_management| %>
+         <tr>
+           <td><%= score_management.when %></td>
+           <td><%= score_management.course %></td>
+           <td><%= score_management.stroke %></td>
+         </tr>
+         <% end %>
+       </tbody>
+     </table>
+</div>
+<% end %>
+
+
+
  <h3><%= @user.name %>さんの投稿一覧</h3>
   <% @user.blogs.each do |blog| %>
   <div class="title">

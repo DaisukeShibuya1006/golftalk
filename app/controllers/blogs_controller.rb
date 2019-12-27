@@ -3,10 +3,8 @@
 class BlogsController < ApplicationController
   before_action :authenticate_user!
 
-  PER = 5
-
   def index
-    @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(PER)
+    @blogs = Blog.all.order(created_at: :desc).page(params[:page]).per(8)
     @users = User.all
     @user = User.find_by(params[:id])
   end

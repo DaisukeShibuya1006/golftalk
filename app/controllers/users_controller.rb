@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   end
 
   def list
-    @users = User.all.order(created_at: :desc).page(params[:page]).per(PER)
+    @users = User.order(created_at: :desc).page(params[:page]).per(24)
   end
 
   def follow

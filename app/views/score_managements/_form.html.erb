@@ -1,0 +1,34 @@
+<div class="container">
+  <%= form_with(model: score_management, local: true) do |form| %>
+  <% if score_management.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(score_management.errors.count, "error") %> prohibited this score_management from being saved:</h2>
+
+      <ul>
+        <% score_management.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :プレー日 %>
+    <%= form.text_field :when %>
+  </div>
+
+  <div class="field">
+    <%= form.label :コース名 %>
+    <%= form.text_field :course %>
+  </div>
+
+  <div class="field">
+    <%= form.label :スコア %>
+    <%= form.text_field :stroke %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>

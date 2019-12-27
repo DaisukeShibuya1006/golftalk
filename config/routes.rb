@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :score_managements
   resources :blogs do
     resources :comments
     resources :likes, only: [:create, :destroy]
@@ -23,8 +24,6 @@ Rails.application.routes.draw do
   post 'posts/complete' => 'posts#create'
 
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
-
-  resources :records
 
   put 'users/follow/:id' =>'users#follow'
   put 'users/unfollow/:id' => 'users#unfollow'

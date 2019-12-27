@@ -1,0 +1,13 @@
+<% @score_managements.each do |score_management| %>
+  <tr>
+    <td></td>
+    <td><%= score_management.course %></td>
+    <td><%= score_management.stroke %></td>
+    <td><%= score_management.patting %></td>
+    <td><%= score_management.thought %></td>
+    <td><%= score_management.uid %></td>
+    <td><%= link_to 'Show', score_management %></td>
+    <td><%= link_to 'Edit', edit_score_management_path(score_management) %></td>
+    <td><%= link_to 'Destroy', score_management, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
