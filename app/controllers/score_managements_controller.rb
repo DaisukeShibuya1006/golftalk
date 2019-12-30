@@ -78,6 +78,6 @@ class ScoreManagementsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def score_management_params
-      params.require(:score_management).permit(:when, :course, :stroke, :patting, :thought, :uid)
+      params.require(:score_management).permit(:date, :course, :stroke,:uid)
     end
 end

@@ -1,6 +1,6 @@
 class ScoreManagement < ApplicationRecord
   with_options presence: true do
-    validates :when
+    validates :date
     validates :course
     validates :stroke
   end
